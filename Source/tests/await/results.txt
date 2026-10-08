@@ -1,0 +1,55 @@
+results.txt
+PASS 162 actual extracted native Jump iterator / real Harmony generated await checks
+
+bad-hash.txt
+PASS rejected bad-hash: Unsupported native method version: CharacterActionMoveStepJump+<RollChecksIfNecessary>d__11
+
+unsafe-finally.txt
+PASS rejected unsafe-finally: Await would execute a synchronous finally: EH:Roll
+
+unsafe-branch.txt
+PASS rejected unsafe-branch: Unsupported branch iterator state assignment: Branch:Roll
+
+unsafe-output.txt
+PASS rejected unsafe-output: Unsupported native result or output type: Outputs:Void
+
+whole-original.txt
+BLOCKED by native UnityEngine.Component.get_transform InternalCall: CharacterActionAttack+<ExecuteImpl>d__7
+PASS original owner: CharacterActionBreakFree+<ExecuteImpl>d__1
+PASS original owner: CharacterActionCastSpell+<CounterEffectAction>d__13
+PASS original owner: CharacterActionMagicEffect+<ExecuteImpl>d__45
+PASS original owner: CharacterActionMagicEffect+<MagicEffectExecuteOnZone>d__73
+BLOCKED by native UnityEngine.Component.get_transform InternalCall: CharacterActionMagicEffect+<MagicEffectExecuteOnTargets>d__74
+PASS original owner: CharacterActionMagicEffect+<MagicEffectExecuteOnPositions>d__75
+PASS original owner: CharacterActionMagicEffect+<ExecuteMagicAttack>d__76
+PASS original owner: CharacterActionReapplyEffect+<ExecuteImpl>d__1
+PASS original owner: CharacterActionSleightOfHand+<ExecuteImpl>d__2
+PASS original owner: CharacterActionSpendPower+<ExecuteImpl>d__4
+PASS original owner: CharacterActionStabilize+<ExecuteImpl>d__2
+PASS original owner: CharacterActionUsePower+<CounterEffectAction>d__8
+PASS original owner: CharacterActionMoveStepClimb+<ExecuteImpl>d__11
+PASS original owner: CharacterActionMoveStepJump+<RollChecksIfNecessary>d__11
+PASS original owner: BattleState_TurnReady+<ExecuteDeathSavingThrow>d__8
+PASS original owner: GameLocationBattle+<RollInitiative>d__116
+PASS original owner: GameLocationBattleManager+<HandleSpellCast>d__99
+PASS original owner: GameLocationBattleManager+<HandleFailedSavingThrow>d__104
+PASS original owner: GameLocationBattleManager+<HandleBardicInspirationForAttack>d__103
+PASS original owner: GameLocationBattleManager+<HandleFailedAbilityCheck>d__105
+PASS original owner: NetworkingManager+<RollHitDieAsync>d__194
+PASS original owner: CharacterActionShove+<ExecuteImpl>d__4
+PASS original owner: NarrativePlayer+<PlaySequenceAync>d__33
+PASS original owner: FunctorSetGadgetConditionByAbilityCheck+<Execute>d__0
+PASS original owner: FunctorSetGadgetConditionBySavingThrow+<Execute>d__0
+PASS original owner: CharacterActionStartBattle+<ExecuteImpl>d__7
+PASS original owner: CharacterActionFreeFall+<ExecuteImpl>d__7
+PASS original owner: CharacterActionDeflectMissile+<ExecuteImpl>d__1
+PASS original owner: CharacterAction+<Execute>d__96
+PASS original dependency qualification: 28 generated; 2 require unavailable native Unity InternalCall
+
+unity-shim.txt
+Test-only UnityEngine.Component.get_transform stub: throws if invoked; actual game assembly unchanged.
+
+whole-shim.txt
+PASS actual NativePatches.Install: 30 native owners, 46 await sites, native disposal/TA reset hooks
+PASS main rollback: all manual await and cleanup hooks removed
+PASS native reload preflight: 5 neutral fault normalizers retained

@@ -1,0 +1,5 @@
+Legacy source SHA256: 4782b6132e68a4d7e2135eb75667437732114503a3bfc5f2e8e65d436a239741
+Fake measured actor height=75, allocated=30, following detail y=120, actor y=86
+Explicit GUI metric boundary; this does not establish native glyph measurements or physical rendering.
+Unhandled exception. System.InvalidOperationException: REPRO: legacy fixed-height text row overlaps its following message under the explicit metric boundary.
+   at LegacyTextProbe.Main()

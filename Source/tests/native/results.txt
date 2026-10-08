@@ -1,0 +1,17 @@
+PASS: 60 composite native comparisons across original faces, advantage/disadvantage, proficiency, skill eligibility, clamps, Lucky, repeated rerolls and forced faces.
+PASS: nested actor and static-sum notifications keep independent native RNG.
+PASS: canceled requests, changed native features and skipped form identities.
+PASS: Auto on a later group or Lucky replacement discards the whole step and redraws every native stage.
+PASS: whole-batch count guards, automatic draw boundaries, accepted-array immutability and pending reset/disposal.
+PASS: owner cancellation and top-level waiter disposal retire orphan modals without closing another owner's prompt.
+Mutating native notification: actual=8 first=6 second=8 nativeRNG=2 events=1>2,2>6,1>8
+PASS: live feature changes during native notifications revoke remaining prepared replacements.
+PASS: malformed live feature stamps fall back without adding native exceptions or leaking leases.
+PASS: cancellation from a native notification revokes remaining faces and preserves later independent rolls.
+PASS: native WildShape getters/enumeration preserve original-hero preview scratch and party actor ownership.
+PASS: excessive native reroll and aggregate form plans use bounded automatic fallback before UI.
+PASS: empty/constant rolls, disabled rerolls with native forced faces, and native critical counters.
+PASS: rejected native state atomically retires static bonus and actor dice together.
+PASS: pending and accepted category changes retire whole steps; Sleep cannot borrow HitDice availability.
+PASS: anchored composite parts and group retirement
+PASS: 313 production adapter assertions over pristine native dice IL with real Harmony.

@@ -1,0 +1,1 @@
+PASS: 24 combined actual TA.Run/Reset and Jump iterator assertions through production NativePatches, RuntimeRolls, broker and actual RollWindow ownership.

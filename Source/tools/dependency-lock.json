@@ -1,0 +1,64 @@
+{
+  "game_sha256": "a87e45cbd187e42e9d64a610850b39edba4896168b14d71ca71c5d32cf9e96ee",
+  "managed_reference_count": 192,
+  "UnityModManager": {
+    "version": "0.32.4",
+    "assembly_version": "0.32.4.0",
+    "package_url": "https://api.nuget.org/v3-flatcontainer/unitymodmanager/0.32.4/unitymodmanager.0.32.4.nupkg",
+    "package_sha256": "a8438e921ca7b0e5805f5a31c196ae65c90f236543885bea0146457d082c9ec9",
+    "dll_member": "lib/net35/UnityModManager.dll",
+    "dll_sha256": "1387468bc3af41c50fe51859a3bb7af4922891aa8f13a6187e7a348ceaabfd88",
+    "license": "MIT",
+    "bundled_in_mod": false
+  },
+  "Harmony": {
+    "version": "2.3.6",
+    "assembly_version": "2.3.6.0",
+    "package_url": "https://api.nuget.org/v3-flatcontainer/lib.harmony/2.3.6/lib.harmony.2.3.6.nupkg",
+    "package_sha256": "498f99c5ca97cfec0e6cb277d721c242071ea9d9f019312cf9eaf015762de075",
+    "runtime_dll_member": "lib/net48/0Harmony.dll",
+    "runtime_dll_sha256": "df043f05c6e43602fa8e8f38f52a3a2cf962aab7a65a9d85573ea25f01a63e80",
+    "fixture_dll_member": "lib/net8.0/0Harmony.dll",
+    "fixture_dll_sha256": "9514a5c06980b2d2b84e6b6429453eb31b7d904832f14d645e69754e0aaf902e",
+    "license": "MIT",
+    "bundled_in_mod": false
+  },
+  "official_installer_verification": {
+    "source_url": "https://www.dropbox.com/s/wz8x8e4onjdfdbm/UnityModManager.zip?dl=1",
+    "zip_sha256": "2d394abdbc3ad37a241c0a1dde8683a77646bc8c72c034b133153d376a9d5be7",
+    "runtime_dlls_equal_nuget_members": true,
+    "solasta_config_game_exe": "Solasta.exe",
+    "solasta_config_entry_point": "[UnityEngine.UIModule.dll]UnityEngine.Canvas.cctor:Before",
+    "solasta_config_starting_point": "[Assembly-CSharp.dll]TacticalAdventuresApplication.Start:After"
+  },
+  "Mono.Cecil": {
+    "version": "0.10.4",
+    "assembly_version": "0.10.4.0",
+    "package_url": "https://api.nuget.org/v3-flatcontainer/mono.cecil/0.10.4/mono.cecil.0.10.4.nupkg",
+    "package_sha256": "3451a4a112a81be0bf76b8dc2bca396acdf0455d80c8961e7903ce1fb35c2a9a",
+    "dll_member": "lib/net35/Mono.Cecil.dll",
+    "dll_sha256": "7ae470288fff4a402899c254d0a76cefef55877f5c54f96e83c797cc5bb6e2f6",
+    "license": "MIT",
+    "bundled_in_mod": false,
+    "development_only": true
+  },
+  "PhotonGameTransport": {
+    "source": "supplied pristine Solasta_Data/Managed, not downloaded or bundled",
+    "bundled_in_mod": false,
+    "dll_sha256": {
+      "PhotonUnityNetworking.dll": "f1efa0cebf758bd79d43e202757d39b00e27384c65084ed14a9697af8bc3e32b",
+      "PhotonRealtime.dll": "1cb825bb0f955fef65a29b2981797214d08fa2137b3738c4924b709b7d28a29d",
+      "Photon3Unity3D.dll": "5619e0aec897562522ce9adc87b5b80e3e5e9b1b137cbae866f8812e874e7fbe"
+    }
+  },
+  "PowerShellGrammar": {
+    "development_only": true,
+    "grammar_version": "7.4.6",
+    "bundled_in_mod": false,
+    "script_execution": false,
+    "packages": {
+      "system.management.automation.7.4.6.nupkg": "a3ae82271d0cab7758506c89aec0228f3dc08712ce6f17c57b785d6d4f1f77e3",
+      "microsoft.management.infrastructure.runtime.unix.3.0.0.nupkg": "b4f959bad08df9a6e680c33200f5cefe7c1b8222a26eb134d338de0b565425ab"
+    }
+  }
+}

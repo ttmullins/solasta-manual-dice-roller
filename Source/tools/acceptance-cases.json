@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "profile": "single_player_windows_x64_unity_mono",
+  "cases": [
+    {
+      "id": "load_restart",
+      "requirement": "Cold start the supported clean game with UMM 0.32.4/Harmony 2.3.6; confirm mod loads once, diagnostics match this DLL, and reload/update requires restarting."
+    },
+    {
+      "id": "initiative",
+      "requirement": "Start combat; submit known initiative faces for the party and verify native order/modifiers without a stall."
+    },
+    {
+      "id": "attacks_advantage",
+      "requirement": "Exercise normal, advantage and disadvantage attack rolls with known faces; verify selected face, modifiers, miss/hit/critical and native outcomes."
+    },
+    {
+      "id": "lucky_auto",
+      "requirement": "Submit a natural 1 for a Halfling Lucky roll; enter the replacement manually; repeat with Auto and verify the whole native step completes once."
+    },
+    {
+      "id": "native_action_ability",
+      "requirement": "Exercise actual Jump/Climb or BreakFree plus an ordinary ability check; confirm manual requests use the acting character and native bonuses/results."
+    },
+    {
+      "id": "counterspell_failure",
+      "requirement": "Exercise Counterspell ability checks through both success and failure, including manual entry and Auto; verify the original failure continuation resumes, completes once and leaves no modal or frozen action."
+    },
+    {
+      "id": "shove_contest",
+      "requirement": "Exercise shove success/failure with different native Athletics/Acrobatics choices, advantage/disadvantage and known attack/defender faces. Verify original contest outcome, action state and no stale input; unsupported random affinity bonuses must retain native behavior."
+    },
+    {
+      "id": "saving_throw_bonuses",
+      "requirement": "Exercise saving throws with Bless/Bane and a spell save; verify every requested face, advantage and native success/failure/bookkeeping."
+    },
+    {
+      "id": "spell_pools",
+      "requirement": "Exercise Sleep with a known 5d8 pool including total 40; verify target selection and native pool consumption; verify fixed/auxiliary values require no phantom roll."
+    },
+    {
+      "id": "magic_missile",
+      "requirement": "Cast Magic Missile with ordinary and additional damage; verify requested raw faces correspond to native dice counts and every missile resolves."
+    },
+    {
+      "id": "effects_targets",
+      "requirement": "Exercise shared-area versus per-target damage, critical extra dice, healing and temporary HP; verify no batch is reused or shifted to a different form/target."
+    },
+    {
+      "id": "rest_hit_dice",
+      "requirement": "Spend a rest hit die with a known face and repeat with Auto; verify native healing bounds, spent die count, UI totals and no duplicate spending."
+    },
+    {
+      "id": "cancel_transition",
+      "requirement": "Cancel/dispose a pending action, change location and disable/re-enable the mod; verify only the owned prompt closes and no modal/input/awaiter remains stranded."
+    },
+    {
+      "id": "ui_render_input",
+      "requirement": "At ordinary and high UI scaling/resolution, inspect every prompt row, invalid input and footer; drag repeatedly and verify camera/scene commands are blocked only while the modal owns input."
+    },
+    {
+      "id": "automatic_boundaries",
+      "requirement": "With a category disabled or an unsupported native context, confirm the native roll continues without a modal; disabling mid-prompt resumes the native action safely without stealing accepted faces."
+    },
+    {
+      "id": "compatibility_guard",
+      "requirement": "Confirm an unsupported changed game or conflicting Harmony patch is rejected/falls back with a useful message and leaves ordinary native gameplay usable; use a separate test setup, not the qualified clean installation."
+    },
+    {
+      "id": "remove_restart",
+      "requirement": "Close the game, remove only the standalone mod through UMM, restart and confirm ordinary dice and input work while the clean main game DLL hash remains unchanged."
+    }
+  ]
+}

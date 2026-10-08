@@ -1,0 +1,9 @@
+{
+  "production_sources": {
+    "src/NativeNetworkScheduler.cs": "eab2da6a1c081730afe5da6e16278b61f728510d3d54c12809fdd105a9c60ade"
+  },
+  "pristine_game_sha256": "a87e45cbd187e42e9d64a610850b39edba4896168b14d71ca71c5d32cf9e96ee",
+  "runtime": ".NET8/Linux; native copied Solasta IL; Unity random API is a managed boundary double",
+  "photon_sessions_executed": false,
+  "scheduler_fixture": "genuine pristine TA.Coroutine.Run, actual Unity state layout; no scheduler ABI double"
+}

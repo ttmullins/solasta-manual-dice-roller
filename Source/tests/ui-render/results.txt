@@ -1,0 +1,75 @@
+PASS Display outside GUI and raw mixed-face rendering
+PASS Typing waits on ambiguous prefixes and commits others
+PASS Printed zero faces on d10 and d100
+PASS Invalid raw face cannot confirm
+PASS Keypad selects faces and advances
+PASS Tab, arrows, wheel and slot clicks navigate
+PASS Advantage, target and modifier context
+PASS Header options button opens window options and never drags
+PASS Multiple dice show a running total
+PASS Auto blank prompt closes before native callback
+PASS Enter and Escape callbacks
+PASS Paired key/character events act once
+PASS Old owner cannot close successor prompt
+PASS Completion callback failure cancels runtime
+PASS Header drag accumulates and releases
+PASS Close while dragging outside GUI is lifecycle-safe
+PASS Focus loss while dragging outside GUI is lifecycle-safe
+PASS Input read failure during close cannot strand callbacks
+PASS Failed close polling retains captured held release
+PASS Cursor restore failure cannot strand callbacks
+PASS Settings save failure cannot strand completion
+PASS Render-window failure falls back to native
+PASS Style initialization failure falls back to native
+PASS Partial texture allocation fault recovers next prompt
+PASS Control render failure balances scroll and falls back
+PASS GUI color and enabled state restore on render failure
+PASS Malformed scale remains finite: NaN
+PASS Malformed scale remains finite: Infinity
+PASS Malformed scale remains finite: -Infinity
+PASS Malformed scale remains finite: -1
+PASS Malformed scale remains finite: 0
+PASS Malformed persisted position remains finite
+PASS Missing settings falls back without stranded prompt
+PASS Small screens keep the whole window on screen
+PASS Long prompt and 512 dice stay within a bounded viewport
+PASS Measured wrapped names cannot overlap following text
+PASS Very long text and dice use separate bounded viewports
+PASS Native text measurement fault retires the owned prompt: False
+PASS Native text measurement fault retires the owned prompt: True
+PASS Replaced GUI service is not modified on close
+PASS Cursor acquisition read failure falls back locally
+PASS Cursor acquisition show failure falls back locally
+PASS Accepted callback can open successor safely
+PASS Destroy while dragging releases ownership outside GUI
+PASS Unexpected engine destruction cancels owned pending request
+PASS Dead native component still retires managed owner during OnDestroy
+PASS Engine-destruction fallback can open a successor
+PASS Disabled and multiplayer requests use native immediately
+PASS Only an authorized multiplayer owner opens a prompt
+PASS An offline prompt cannot inherit multiplayer permission
+PASS Nonowner waiting banner is decorative and owns no input
+PASS Waiting banner close is bound to its request identity
+PASS An owner modal takes precedence over a waiting banner
+PASS Waiting rendering failure leaves the network request untouched
+PASS Game-rolled notices are transient and own no input
+PASS The paused-dice notice stays up longer
+PASS Notice drawing failure is contained
+PASS Per-frame hook runs and is contained
+PASS Game fonts are applied and a failing theme falls back
+PASS Every roll kind has its own readable accent
+PASS Kind colours mark the badge, title, rules, active die and total
+PASS The kind badge sits between the title and the options button
+PASS Kind textures are cached per kind and released
+PASS History records confirmed rolls and game rolls
+PASS History keeps other players' rolls and the newest forty
+PASS History panel opens from the options menu, newest first
+PASS History panel scrolls, clears and closes
+PASS History panel owns only the pointer over its own rectangle
+PASS History panel header drags and remembers its place
+PASS The modal window keeps fresh gestures over a panel beneath it
+PASS A history drawing fault closes only the panel
+PASS Waiting banner names who is rolling, what and which dice
+PASS Game-rolled notices carry the kind colour
+PASS 73 production-window boundary cases; 399 assertions; 0 failures.
+Test-only GUI simulation executes production logic. It does not test Unity rendering, physical mouse dragging, or actual Unity GUIUtility context requirements.

@@ -1,0 +1,224 @@
+TYPE FeatureDefinitionAbilityCheckAffinity
+FIELD System.String FeatureDefinitionAbilityCheckAffinity::CheckAdvantage = {0}Advantage
+FIELD System.String FeatureDefinitionAbilityCheckAffinity::CheckDisadvantage = {0}Disadvantage
+FIELD System.String FeatureDefinitionAbilityCheckAffinity::CheckAutofail = {0}Autofail
+FIELD System.String FeatureDefinitionAbilityCheckAffinity::advantageFormat = 
+FIELD System.String FeatureDefinitionAbilityCheckAffinity::disadvantageFormat = 
+FIELD System.String FeatureDefinitionAbilityCheckAffinity::automaticallyFailedFormat = 
+FIELD System.String FeatureDefinitionAbilityCheckAffinity::bonusFormat = 
+FIELD System.String FeatureDefinitionAbilityCheckAffinity::bonusFormatWithDice = 
+FIELD System.String FeatureDefinitionAbilityCheckAffinity::escapingPerceptionSuffix = 
+FIELD System.String FeatureDefinitionAbilityCheckAffinity::resistingShoveSuffix = 
+FIELD System.Boolean FeatureDefinitionAbilityCheckAffinity::useControllerAbilityChecks = 
+FIELD System.Collections.Generic.List`1<FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup> FeatureDefinitionAbilityCheckAffinity::affinityGroups = 
+FIELD System.Boolean FeatureDefinitionAbilityCheckAffinity::substractBardicDieRoll = 
+METHOD System.Void FeatureDefinitionAbilityCheckAffinity::ComputeAbilityCheckAdvantageTrendAndModifier(System.String,System.String,System.Collections.Generic.List`1<RuleDefinitions/TrendInfo>,System.Collections.Generic.List`1<RuleDefinitions/TrendInfo>,System.Int32&,RuleDefinitions/FeatureOrigin,System.Int32,LocationDefinitions/LightingState,System.Int32,System.Boolean)
+0000 ldarg.s P4:System.Int32&
+0002 ldc.i4.0 
+0003 stind.i4 
+0004 ldarg.0 
+0005 ldfld System.Collections.Generic.List`1<FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup> FeatureDefinitionAbilityCheckAffinity::affinityGroups
+000A callvirt System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup>::GetEnumerator()
+000F stloc.0 
+0010 br @178
+0015 ldloca.s V0:System.Collections.Generic.List`1/Enumerator<FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup>
+0017 call !0 System.Collections.Generic.List`1/Enumerator<FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup>::get_Current()
+001C stloc.1 
+001D ldloc.1 
+001E ldfld System.String FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::abilityScoreName
+0023 ldarg.1 
+0024 call System.Boolean System.String::op_Equality(System.String,System.String)
+0029 brfalse @178
+002E ldc.i4.0 
+002F stloc.2 
+0030 ldarg.2 
+0031 call System.Boolean System.String::IsNullOrEmpty(System.String)
+0036 brtrue.s @25
+0038 ldloc.1 
+0039 ldfld System.String FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::proficiencyName
+003E call System.Boolean System.String::IsNullOrEmpty(System.String)
+0043 brfalse.s @28
+0045 ldc.i4.1 
+0046 stloc.2 
+0047 br.s @35
+0049 ldarg.2 
+004A ldloc.1 
+004B ldfld System.String FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::proficiencyName
+0050 call System.Boolean System.String::op_Equality(System.String,System.String)
+0055 brfalse.s @35
+0057 ldc.i4.1 
+0058 stloc.2 
+0059 ldloc.2 
+005A brfalse.s @47
+005C ldloc.1 
+005D ldfld RuleDefinitions/AbilityCheckContext FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::abilityCheckContext
+0062 brfalse.s @47
+0064 ldloc.1 
+0065 ldfld RuleDefinitions/AbilityCheckContext FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::abilityCheckContext
+006A ldarg.s P6:System.Int32
+006C and 
+006D brtrue.s @47
+006F ldc.i4.0 
+0070 stloc.2 
+0071 ldloc.2 
+0072 brfalse.s @77
+0074 ldloc.1 
+0075 ldfld RuleDefinitions/LightingContext FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::lightingContext
+007A brfalse.s @77
+007C ldloc.1 
+007D ldfld RuleDefinitions/LightingContext FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::lightingContext
+0082 ldc.i4.1 
+0083 bne.un.s @58
+0085 ldarg.s P7:LocationDefinitions/LightingState
+0087 brfalse.s @75
+0089 ldloc.1 
+008A ldfld RuleDefinitions/LightingContext FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::lightingContext
+008F ldc.i4.2 
+0090 bne.un.s @65
+0092 ldarg.s P7:LocationDefinitions/LightingState
+0094 ldc.i4.1 
+0095 beq.s @75
+0097 ldloc.1 
+0098 ldfld RuleDefinitions/LightingContext FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::lightingContext
+009D ldc.i4.3 
+009E bne.un.s @73
+00A0 ldarg.s P7:LocationDefinitions/LightingState
+00A2 ldc.i4.2 
+00A3 ceq 
+00A5 br.s @76
+00A7 ldc.i4.0 
+00A8 br.s @76
+00AA ldc.i4.1 
+00AB stloc.2 
+00AC ldloc.2 
+00AD brfalse @178
+00B2 ldloc.1 
+00B3 ldfld RuleDefinitions/CharacterAbilityCheckAffinity FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::affinity
+00B8 ldc.i4.1 
+00B9 bne.un.s @94
+00BB ldarg.3 
+00BC ldc.i4.1 
+00BD ldarg.s P5:RuleDefinitions/FeatureOrigin
+00BF ldfld RuleDefinitions/FeatureSourceType RuleDefinitions/FeatureOrigin::sourceType
+00C4 ldarg.s P5:RuleDefinitions/FeatureOrigin
+00C6 ldfld System.String RuleDefinitions/FeatureOrigin::sourceName
+00CB ldarg.s P5:RuleDefinitions/FeatureOrigin
+00CD ldfld System.Object RuleDefinitions/FeatureOrigin::source
+00D2 newobj System.Void RuleDefinitions/TrendInfo::.ctor(System.Int32,RuleDefinitions/FeatureSourceType,System.String,System.Object)
+00D7 callvirt System.Void System.Collections.Generic.List`1<RuleDefinitions/TrendInfo>::Add(!0)
+00DC br.s @108
+00DE ldloc.1 
+00DF ldfld RuleDefinitions/CharacterAbilityCheckAffinity FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::affinity
+00E4 ldc.i4.2 
+00E5 bne.un.s @108
+00E7 ldarg.3 
+00E8 ldc.i4.m1 
+00E9 ldarg.s P5:RuleDefinitions/FeatureOrigin
+00EB ldfld RuleDefinitions/FeatureSourceType RuleDefinitions/FeatureOrigin::sourceType
+00F0 ldarg.s P5:RuleDefinitions/FeatureOrigin
+00F2 ldfld System.String RuleDefinitions/FeatureOrigin::sourceName
+00F7 ldarg.s P5:RuleDefinitions/FeatureOrigin
+00F9 ldfld System.Object RuleDefinitions/FeatureOrigin::source
+00FE newobj System.Void RuleDefinitions/TrendInfo::.ctor(System.Int32,RuleDefinitions/FeatureSourceType,System.String,System.Object)
+0103 callvirt System.Void System.Collections.Generic.List`1<RuleDefinitions/TrendInfo>::Add(!0)
+0108 ldloc.1 
+0109 ldfld System.Int32 FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::abilityCheckModifierDiceNumber
+010E ldc.i4.1 
+010F beq.s @114
+0111 ldc.i4.0 
+0112 br.s @115
+0114 ldc.i4.1 
+0115 stloc.3 
+0116 ldc.i4.0 
+0117 stloc.s V4:System.Int32
+0119 ldarg.s P9:System.Boolean
+011B brfalse.s @129
+011D ldloc.1 
+011E ldfld System.Int32 FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::abilityCheckModifierDiceNumber
+0123 ldsfld System.Int32[] RuleDefinitions::DiceMinValue
+0128 ldloc.1 
+0129 ldfld RuleDefinitions/DieType FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::abilityCheckModifierDieType
+012E ldelem.i4 
+012F mul 
+0130 stloc.s V4:System.Int32
+0132 br.s @152
+0134 ldloc.1 
+0135 ldfld RuleDefinitions/AbilityCheckGroupOperation FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::abilityCheckGroupOperation
+013A brtrue.s @140
+013C ldloc.1 
+013D ldfld System.Int32 FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::abilityCheckModifierDiceNumber
+0142 ldloc.1 
+0143 ldfld RuleDefinitions/DieType FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::abilityCheckModifierDieType
+0148 ldnull 
+0149 call System.Int32 RuleDefinitions::RollStaticDiceAndSum(System.Int32,RuleDefinitions/DieType,System.Collections.Generic.List`1<System.Int32>)
+014E stloc.s V4:System.Int32
+0150 br.s @152
+0152 ldloc.1 
+0153 ldfld RuleDefinitions/AbilityCheckGroupOperation FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::abilityCheckGroupOperation
+0158 ldc.i4.1 
+0159 bne.un.s @152
+015B ldloc.1 
+015C ldfld System.Int32 FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::abilityCheckModifierDiceNumber
+0161 ldloc.1 
+0162 ldfld RuleDefinitions/DieType FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::abilityCheckModifierDieType
+0167 ldnull 
+0168 call System.Int32 RuleDefinitions::RollStaticDiceAndSum(System.Int32,RuleDefinitions/DieType,System.Collections.Generic.List`1<System.Int32>)
+016D neg 
+016E stloc.s V4:System.Int32
+0170 ldarg.s P4:System.Int32&
+0172 ldarg.s P4:System.Int32&
+0174 ldind.i4 
+0175 ldloc.s V4:System.Int32
+0177 add 
+0178 stind.i4 
+0179 ldloca.s V5:RuleDefinitions/TrendInfo
+017B ldloc.s V4:System.Int32
+017D ldarg.s P5:RuleDefinitions/FeatureOrigin
+017F ldfld RuleDefinitions/FeatureSourceType RuleDefinitions/FeatureOrigin::sourceType
+0184 ldarg.s P5:RuleDefinitions/FeatureOrigin
+0186 ldfld System.String RuleDefinitions/FeatureOrigin::sourceName
+018B ldarg.s P5:RuleDefinitions/FeatureOrigin
+018D ldfld System.Object RuleDefinitions/FeatureOrigin::source
+0192 call System.Void RuleDefinitions/TrendInfo::.ctor(System.Int32,RuleDefinitions/FeatureSourceType,System.String,System.Object)
+0197 ldloca.s V5:RuleDefinitions/TrendInfo
+0199 ldloc.3 
+019A stfld RuleDefinitions/TrendInfoDieFlag RuleDefinitions/TrendInfo::dieFlag
+019F ldloca.s V5:RuleDefinitions/TrendInfo
+01A1 ldloc.1 
+01A2 ldfld RuleDefinitions/DieType FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup::abilityCheckModifierDieType
+01A7 stfld RuleDefinitions/DieType RuleDefinitions/TrendInfo::dieType
+01AC ldarg.s P3:System.Collections.Generic.List`1<RuleDefinitions/TrendInfo>
+01AE ldloc.s V5:RuleDefinitions/TrendInfo
+01B0 callvirt System.Void System.Collections.Generic.List`1<RuleDefinitions/TrendInfo>::Add(!0)
+01B5 leave.s @186
+01B7 ldloca.s V0:System.Collections.Generic.List`1/Enumerator<FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup>
+01B9 call System.Boolean System.Collections.Generic.List`1/Enumerator<FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup>::MoveNext()
+01BE brtrue @8
+01C3 leave.s @186
+01C5 ldloca.s V0:System.Collections.Generic.List`1/Enumerator<FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup>
+01C7 constrained. System.Collections.Generic.List`1/Enumerator<FeatureDefinitionAbilityCheckAffinity/AbilityCheckAffinityGroup>
+01CD callvirt System.Void System.IDisposable::Dispose()
+01D2 endfinally 
+01D3 ldarg.0 
+01D4 ldfld System.Boolean FeatureDefinitionAbilityCheckAffinity::substractBardicDieRoll
+01D9 brfalse.s @208
+01DB ldarg.s P8:System.Int32
+01DD ldc.i4.0 
+01DE ble.s @208
+01E0 ldarg.s P4:System.Int32&
+01E2 ldarg.s P4:System.Int32&
+01E4 ldind.i4 
+01E5 ldarg.s P8:System.Int32
+01E7 sub 
+01E8 stind.i4 
+01E9 ldarg.s P3:System.Collections.Generic.List`1<RuleDefinitions/TrendInfo>
+01EB ldarg.s P8:System.Int32
+01ED neg 
+01EE ldarg.s P5:RuleDefinitions/FeatureOrigin
+01F0 ldfld RuleDefinitions/FeatureSourceType RuleDefinitions/FeatureOrigin::sourceType
+01F5 ldarg.s P5:RuleDefinitions/FeatureOrigin
+01F7 ldfld System.String RuleDefinitions/FeatureOrigin::sourceName
+01FC ldnull 
+01FD newobj System.Void RuleDefinitions/TrendInfo::.ctor(System.Int32,RuleDefinitions/FeatureSourceType,System.String,System.Object)
+0202 callvirt System.Void System.Collections.Generic.List`1<RuleDefinitions/TrendInfo>::Add(!0)
+0207 ret 

@@ -1,0 +1,76 @@
+TA.Run fingerprint: a921326a4c0da3313088d64f87656902da53a0bbb6f33a3532fb8189bada1098
+Banter.UpdateImpl fingerprint: 89fa4bc2d741b8d6ae430c1edf3abd36fa309eb806d7e271d9274c268bfe5b55
+RNG body fingerprint: System.Single TA.DeterministicRandom::get_value() 918de17bfc6bb79ec43968395c4e1d385fe5d47131a310504c9d2e43d1e90873
+RNG body fingerprint: System.Int32 TA.DeterministicRandom::Range(System.Int32,System.Int32) 2f4927e9480a3b9eeef0be957a774067435854bcac64470df9924a1ad0c0d3e6
+RNG body fingerprint: System.Single TA.DeterministicRandom::Range(System.Single,System.Single) 12c70808a2440b92c9069e7eef0d9b80515fc80805a534adcfa3a8e4a88c1f5c
+Rest await owner: NetworkingManager+<RollHitDieAsync>d__194
+Rest MoveNext fingerprint: 8794555e58e10191a8ccb0efaa4d5ebaa17ba8e5e9c4c4ee417f7a175e15bcff
+Rest native call offset: 0x004c
+Replicated command: System.Void NetworkingManager::ExecuteAction(CharacterActionParams,CharacterAction/ActionExecutedHandler,System.Boolean)
+  IL_001c: ldstr "ExecuteActionRPC"
+  IL_004c: callvirt System.Void Photon.Pun.PhotonView::RPC(System.String,Photon.Pun.RpcTarget,System.Object[])
+Replicated command: System.Void NetworkingManager::ExecuteActionChain(CharacterActionChainParams,CharacterAction/ActionChainExecutedHandler,System.Boolean)
+  IL_0038: ldstr "An action chain has an action with a custom callback. This is not handled for now."
+  IL_0069: ldstr "ExecuteActionChainRPC"
+  IL_0087: callvirt System.Void Photon.Pun.PhotonView::RPC(System.String,Photon.Pun.RpcTarget,System.Object[])
+Replicated command: System.Void NetworkingManager::RollHitDie(RulesetCharacterHero,RestDefinitions/RestActionExecutedHandler)
+  IL_0014: ldstr "RollHitDieRPC"
+  IL_0045: callvirt System.Void Photon.Pun.PhotonView::RPC(System.String,Photon.Pun.RpcTarget,System.Object[])
+Replicated command: System.Void NetworkingManager::ProcessReactionRequest(ReactionRequest,System.Boolean,System.Int32)
+  IL_0006: ldstr "ProcessReactionRequestRPC"
+  IL_0040: callvirt System.Void Photon.Pun.PhotonView::RPC(System.String,Photon.Pun.RpcTarget,System.Object[])
+PASS CharacterActionParams has no persistent LocalId/Guid
+Network tick selector: System.UInt64 NetworkTick::get_LocalTick()
+Network tick selector: System.UInt64 NetworkTick::get_CommandTick()
+Owner resolver: System.Int32 IPlayerControllerService::GetPlayerControllingHero(RulesetCharacter)
+PASS native RNG restore/record: System.Single TA.DeterministicRandom::get_value()
+PASS native RNG restore/record: System.Int32 TA.DeterministicRandom::Range(System.Int32,System.Int32)
+PASS native RNG restore/record: System.Single TA.DeterministicRandom::Range(System.Single,System.Single)
+DETERMINISTIC_RNG_CALLER System.Boolean AiLocationCharacter::WillExecuteInterruptRequest(ReactionRequest)
+DETERMINISTIC_RNG_CALLER System.Int32 RandomExtensions::RangeExclusive(System.Int32,System.Boolean)
+DETERMINISTIC_RNG_CALLER System.Int32 RandomExtensions::RangeInclusive(System.Int32,System.Int32,System.Boolean)
+DETERMINISTIC_RNG_CALLER EncounterDefinition EncounterTableDefinition::RollEncounter(System.Int32,System.Int32)
+DETERMINISTIC_RNG_CALLER System.Void Functor::SelectCharacters(FunctorParametersDescription,System.Collections.Generic.List`1<GameLocationCharacter>,System.Collections.Generic.List`1<GameLocationCharacter>,System.Boolean)
+DETERMINISTIC_RNG_CALLER System.Boolean FunctorDisplayLore/<Execute>d__2::MoveNext()
+DETERMINISTIC_RNG_CALLER System.Boolean FunctorForceBanterConversation/<Execute>d__1::MoveNext()
+DETERMINISTIC_RNG_CALLER System.Boolean FunctorForceBanterLine/<Execute>d__1::MoveNext()
+DETERMINISTIC_RNG_CALLER System.Boolean FunctorSetGadgetConditionRandomly/<Execute>d__1::MoveNext()
+DETERMINISTIC_RNG_CALLER System.Boolean CharacterActionUsePower/<CheckExecutionFailure>d__11::MoveNext()
+DETERMINISTIC_RNG_CALLER System.Void GameLocationBanterManager::RegisterCharacterForBanterPool(System.String,GameLocationCharacter)
+DETERMINISTIC_RNG_CALLER System.Void GameLocationBanterManager::UpdateBanterPools()
+DETERMINISTIC_RNG_CALLER System.Boolean GameLocationBanterManager::IsValidEvent(BanterEventDefinition,GameLocationCharacter)
+DETERMINISTIC_RNG_CALLER GameLocationCharacter GameLocationBanterManager::ChooseSpeaker(GameLocationCharacter,BanterEventDefinition)
+DETERMINISTIC_RNG_CALLER GameLocationCharacter GameLocationBanterManager::ChooseSpeaker(GameLocationCharacter,BanterEventDefinition)
+DETERMINISTIC_RNG_CALLER GameLocationCharacter GameLocationBanterManager::ChooseSpeaker(GameLocationCharacter,BanterEventDefinition)
+DETERMINISTIC_RNG_CALLER System.String GameLocationBanterManager::ChooseEventVariant(BanterEventDefinition,System.String,GameLocationCharacter,System.Boolean)
+DETERMINISTIC_RNG_CALLER GameLocationCharacter GameLocationBattle::TryToElectLegendaryContender()
+DETERMINISTIC_RNG_CALLER System.Void GameLocationPositioningManager::ComputeMissedImpactPositionAndRotation(UnityEngine.Vector3,UnityEngine.Vector3&,UnityEngine.Quaternion&,UnityEngine.Vector3&)
+DETERMINISTIC_RNG_CALLER System.Void RulesetImplementationManagerLocation::ApplyMotionForm(EffectForm,RulesetImplementationDefinitions/ApplyFormsParams,EffectForm)
+DETERMINISTIC_RNG_CALLER LocationDefinition GameTravelScheduler::RollRandomLocationInBiome(BiomeDefinition,EncounterDefinition)
+DETERMINISTIC_RNG_CALLER System.Void GameTravelScheduler::ExecuteIngredientGathering(System.Int32,TravelEventDefinition)
+DETERMINISTIC_RNG_CALLER System.Void GameTravelScheduler::ExecuteIngredientGathering(System.Int32,TravelEventDefinition)
+DETERMINISTIC_RNG_CALLER System.String GameTravelScheduler::RollRandomLine(System.Collections.Generic.List`1<System.String>)
+DETERMINISTIC_RNG_CALLER RulesetCharacterHero GameTravelScheduler::SelectRandomCharacter(RulesetCharacterHero)
+DETERMINISTIC_RNG_CALLER System.Void GameTravelScheduler::RollSurprise(EncounterParametersDescription,RulesetCharacterHero&,EncounterDefinitions/SurpriseType)
+DETERMINISTIC_RNG_CALLER System.Void GameTravelScheduler::CheckHourlyEvents(System.Int32,System.Boolean)
+DETERMINISTIC_RNG_CALLER System.String GraphicsCharacterHero::GetAttackAnimationData(RulesetAttackMode,ActionModifier,System.Boolean&,System.Boolean&,System.Boolean&,System.Int32&)
+DETERMINISTIC_RNG_CALLER System.Void CharacterStageBackgroundSelectionPanel::OnRandomBackgroundFlagsCb()
+DETERMINISTIC_RNG_CALLER System.Void CharacterStageBackgroundSelectionPanel::OnRandomBackgroundFlagsCb()
+DETERMINISTIC_RNG_CALLER System.Void CharacterStageBackgroundSelectionPanel::OnRandomAlignmentFlagsCb()
+DETERMINISTIC_RNG_CALLER System.Void CharacterStageBackgroundSelectionPanel::OnRandomAlignmentFlagsCb()
+DETERMINISTIC_RNG_CALLER System.Void RulesetActor::RemoveRandomDetrimentalCondition(System.Collections.Generic.List`1<ConditionDefinition>)
+DETERMINISTIC_RNG_CALLER System.Void RulesetCharacterHero::ApplyLongRest(System.Boolean,TimeInfo)
+DETERMINISTIC_RNG_CALLER System.Void RulesetCharacterMonster::FinalizeMonster(System.Boolean,System.Boolean)
+DETERMINISTIC_RNG_CALLER TreasureOption EquipmentDefinitions::RollTreasureOption(TreasureTableDefinition)
+DETERMINISTIC_RNG_CALLER System.Int32 RuleDefinitions::RollDie(RuleDefinitions/DieType,RuleDefinitions/AdvantageType,System.Int32&,System.Int32&,System.Single)
+DETERMINISTIC_RNG_CALLER System.Int32 RuleDefinitions::RollDie(RuleDefinitions/DieType,RuleDefinitions/AdvantageType,System.Int32&,System.Int32&,System.Single)
+DETERMINISTIC_RNG_CALLER System.Int32 RuleDefinitions::RollDie(RuleDefinitions/DieType,RuleDefinitions/AdvantageType,System.Int32&,System.Int32&,System.Single)
+DETERMINISTIC_RNG_CALLER System.Int32 RuleDefinitions::RollKarmicDie(RuleDefinitions/DieType,System.Single)
+DETERMINISTIC_RNG_CALLER System.Int32 RulesetImplementationManager::ApplyEffectForms(System.Collections.Generic.List`1<EffectForm>,RulesetImplementationDefinitions/ApplyFormsParams,System.Collections.Generic.List`1<System.String>,System.Boolean&,System.Boolean&,System.Boolean,System.Boolean,System.Boolean,RuleDefinitions/EffectApplication,System.Collections.Generic.List`1<EffectFormFilter>)
+DETERMINISTIC_RNG_CALLER System.Int32 RulesetImplementationManager::ApplyEffectForms(System.Collections.Generic.List`1<EffectForm>,RulesetImplementationDefinitions/ApplyFormsParams,System.Collections.Generic.List`1<System.String>,System.Boolean&,System.Boolean&,System.Boolean,System.Boolean,System.Boolean,RuleDefinitions/EffectApplication,System.Collections.Generic.List`1<EffectFormFilter>)
+DETERMINISTIC_RNG_CALLER System.Int32 RulesetImplementationManager::ApplyEffectForms(System.Collections.Generic.List`1<EffectForm>,RulesetImplementationDefinitions/ApplyFormsParams,System.Collections.Generic.List`1<System.String>,System.Boolean&,System.Boolean&,System.Boolean,System.Boolean,System.Boolean,RuleDefinitions/EffectApplication,System.Collections.Generic.List`1<EffectFormFilter>)
+DETERMINISTIC_RNG_CALLER System.Void RulesetImplementationManager::ApplyConditionForm(EffectForm,RulesetImplementationDefinitions/ApplyFormsParams,System.Boolean,System.Int32)
+DETERMINISTIC_RNG_CALLER System.Single TA.AI.SituationalInformation::get_RandomValue()
+DETERMINISTIC_RNG_CALLER System.Boolean TA.AI.Activities.Attack/<ExecuteImpl>d__4::MoveNext()
+DETERMINISTIC_RNG_CALLER System.Boolean TA.AI.Activities.CastMagic/<ExecuteImpl>d__11::MoveNext()
+DETERMINISTIC_RNG_CALLER System.Boolean TA.AI.Activities.PatrolWait/<ExecuteImpl>d__5::MoveNext()

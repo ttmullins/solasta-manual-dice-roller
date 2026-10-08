@@ -1,0 +1,2 @@
+PASS multiplayer protocol: 50305 assertions; 480 multiparty randomized request schedules.
+Scope: production core on .NET 8 with simulated authenticated transport; no live Unity/Mono/Photon or Windows session qualification.

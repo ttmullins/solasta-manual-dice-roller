@@ -1,0 +1,2 @@
+Harmony 2.3.6.0
+PASS 123 actual pristine effect descriptor cases: damage/healing/temporary HP, additional healing bonus groups, helper scope cleanup, and native shared area cache.

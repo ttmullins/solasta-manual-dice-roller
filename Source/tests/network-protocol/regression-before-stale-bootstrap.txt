@@ -1,0 +1,4 @@
+Unhandled exception. System.Exception: a fresh participant must not accept an old Hello/Welcome/Start transcript before its current handshake
+   at ProtocolTests.Check(Boolean value, String message)
+   at ProtocolTests.DelayedHandshakeFromOldRoom()
+   at ProtocolTests.Main()

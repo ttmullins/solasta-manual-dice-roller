@@ -1,0 +1,2 @@
+PASS 103 production save preview assertions over pristine native TryRollSavingThrow, affinity/provider calculations, actor RollSavingThrow/dice IL. Engine scene and UI are fixture boundaries.
+PASS foreign-patch guard accepts the actual pristine game/Unity method metadata without executing native engine calls.

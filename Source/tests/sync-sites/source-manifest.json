@@ -1,0 +1,29 @@
+{
+  "pristine_game_sha256": "a87e45cbd187e42e9d64a610850b39edba4896168b14d71ca71c5d32cf9e96ee",
+  "net8_harmony_sha256": "9514a5c06980b2d2b84e6b6429453eb31b7d904832f14d645e69754e0aaf902e",
+  "runtime": ".NET8/Linux; actual pristine Assembly-CSharp; real Harmony; Unity InternalCalls are throwing test shims; rendering, broker and window are boundaries",
+  "results_sha256": "d395456fa85de61368706a62223ea9a46fb1fc042c2ccf11d21ff02b977aa039",
+  "sources": {
+    "src/OuterSites.cs": "d1c6e1f3ed5c17fae902af7be6a98dd1b604db9627a5db6ec6500a208427413d",
+    "src/NativeProbePlanner.cs": "d537326a594ea735da8fcb0c826979602f35b7b66bde39d891178a0167fb7a27",
+    "src/DeferredRolls.cs": "dbd2181ee06a9e3ed254a03c6ae4a14b0585145716fd1b8a82c29083ca4c3f35",
+    "src/SyncPumpGuard.cs": "bad8c6b987ae540a5bdd7078372e763fbd522548da0ddb483d0cbc9a6be30929",
+    "src/RollText.cs": "c5f66aa26724b88ecf2ff546b216c7d3f9db22045def18ec776c0dcffc625e70",
+    "src/NativeScratchScope.cs": "d3324e9ad7bfec787728cb352039b306fefd3c8b77e7aba92ecda4697d5aaf9b",
+    "src/FallDamage.cs": "b7ef5d444e8bbc70d83ee59841ec52b5be746d1c72cc13b4d6d8e5948854162a",
+    "src/NativeMethodPin.cs": "233f5a69d2302f611d5d482c5883009a1fdb787c0764159bf7e03c04ebf3502e",
+    "src/TurnRolls.cs": "d1cea5aa62fa2b32b67d9162f9c25fe24f9c18eb287251c7ade3fed07f816bd3",
+    "src/FeatureRolls.cs": "46b2f089f41fa242107e5fe003dec592d8286c4b75fd143e00510c568a1cf588",
+    "src/CompositeRolls.cs": "b7c9f7d49f8a70c02806e8e3afe908a09016eba58cf549c5d176205b2669a0f0",
+    "src/MenuRolls.cs": "85c036b938a4e4f5c1ff4c3c5604fc56433f53b6268c929ce415d74b79447dfd",
+    "src/TrapRolls.cs": "76241520bd1b9194addd5b4876275d6f7e9a8281e06c0dad104b1b6c82b85945",
+    "src/RuntimeRolls.cs": "2c9ee8be2a6c0943621bf9b735a8e362a1927a00689d7a39036a7295010769d6",
+    "tests/sync-sites/SyncHost.cs": "bad8f46beefb9c3d60ad57a566919ceed4124e328b73a780985e4ed48283a444",
+    "tests/sync-sites/SyncTests.cs": "688ea745a87d024a6b59b192289833953c86f19ed26151d008083c95b328c277",
+    "tests/sync-sites/SyncTests07.cs": "051378e9eee6b5e0edd49f7fc7431ce23c23c07cdb238c54d94d3beb35f7312c",
+    "tests/sync-sites/SyncTests08.cs": "3e184a1b5d351d501a16396942b265ad9d556f5667e10bb825e7981d2ea4f990",
+    "tools/HarmonyFixtureHost.cs": "eedfc7b2ab248d1d63c0ac75c6b1f01f9a6ffcf8f89cddcb390e7debb05cd23a",
+    "tests/sync-sites/run.py": "7285a06d49f5ba23877cf363dbc593f0fe796b1c94e02ce8f83b6b682046bab8",
+    "tests/network-native/ShimUnityInternalCalls.cs": "5c0e6a8fa4e4adfb295ff57892936645f5965d70a8121bf0ef107ed8049bccdd"
+  }
+}

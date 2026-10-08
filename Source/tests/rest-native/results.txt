@@ -1,0 +1,4 @@
+LOG The native roll providers changed while waiting. Site: RestHitDice.Network
+LOG Rest coroutine startup failed: Exception of type 'RestNativeTests+StartupBoundary' was thrown.
+LOG Rest coroutine startup failed: Exception of type 'RestNativeTests+StartupBoundary' was thrown.
+PASS 125 native rest assertions; actual pristine OnRollCb, LocalCommandManager.RollHitDie, Hero.RollHitDie, ComputeAndApplyHitDieRoll and callback bodies executed. ReceiveHealing terminal side effects and Unity rendering are isolated; native Refresh character access is preserved; Unity Mathf.Max is replaced by equivalent System.Math.Max.

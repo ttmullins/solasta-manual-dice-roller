@@ -1,0 +1,9 @@
+# Original Shove wrapper and contest
+
+This fixture executes copied pristine compiled `CharacterActionShove.ResolveRolls` and `RulesetCharacter.ResolveContestCheck`, plus the original ability modifiers and actor dice routines, through the production planner. It compares native skill selection, totals, outcomes, notifications and trait replacement faces with automatic native baselines across both defending skills and all advantage/disadvantage pairs.
+
+The planner previews the original calculation using isolated scratch references and suppresses its terminal contest before native dice, notifications or condition interruptions. Positive-count ability-affinity sum calls during preview are rejected before RNG. Zero/negative-count sums execute the original empty loop; native advantage-only providers invoke such zero-dice sums. That boundary preserves automatic handling for modifier dice that can affect Athletics-versus-Acrobatics selection.
+
+The defender label displays the selected native Athletics/Acrobatics defense. Its raw trait binding deliberately retains the original contest routine’s acting-skill argument, while proficiency is calculated from the selected defense. UI, service settings, inventory/armor and native condition storage are declared boundary doubles. The full await suite separately executes the complete original ordinary Shove iterator and verifies its conditional skips, suspension/resumption, Boolean result assignment and later effects. That await uses an explicit body/shape proof for its single immutable iterator receiver; the general empty-stack safety rule remains intact. This suite exercises the shared original ResolveRolls calculation used by ordinary and spell shoves. This suite does not run live Unity or Photon sessions.
+
+Run `python3 tests/shove-native/run.py` with the standard suite environment overrides.

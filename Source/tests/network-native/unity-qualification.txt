@@ -1,0 +1,1 @@
+Test-only Unity dependency: 2764 native InternalCalls become managed throwing methods; none may be invoked; game assembly unchanged.

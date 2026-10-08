@@ -1,0 +1,9 @@
+LOG The native roll providers changed while waiting. Site: HealingGuard
+LOG The native roll providers changed while waiting. Site: HealingGuard
+LOG The native roll providers changed while waiting. Site: HealingGuard
+LOG The native roll providers changed while waiting. Site: HealingGuard
+LOG The native roll providers changed while waiting. Site: HealingGuard
+LOG The native roll providers changed while waiting. Site: HealingGuard
+LOG The native roll providers changed while waiting. Site: HealingGuard
+LOG The native roll providers changed while waiting. Site: HealingBetweenForms
+PASS 117 native Sleep/effect assertions: original target filtering, HP pool, damage helpers and area cache execute with production RuntimeRolls and RollBroker. Raw fallback RNG, terminal InflictDamage and UI are isolated fixture boundaries.

@@ -1,0 +1,8 @@
+{
+  "Id": "ManualDiceRoller",
+  "DisplayName": "Manual Dice Roller",
+  "Version": "0.8.4.2",
+  "ManagerVersion": "0.32.4",
+  "AssemblyName": "ManualDiceRoller.dll",
+  "EntryMethod": "ManualDiceRoller.Plugin.Load"
+}

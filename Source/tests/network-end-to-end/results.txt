@@ -1,0 +1,4 @@
+PASS connected-process multiplayer/native integration: 86545 assertions; 13 passing rooms and 3 paused disagreement rooms (every peer stays in the room and the game rolls on); 234 shared native steps, 612 per-peer native continuations, including deferred runner steps.
+Lockstep: every peer runs a random 0-3 game ticks per frame; in every passing room each shared roll ran at the same game tick after the same other gameplay on every peer; without the stopped ticks (0.8.2 behaviour) 18 of 18 steps diverged.
+Executed production protocol/transport/facade/broker/runtime/scheduler with pristine copied raw dice/RNG IL.
+Boundary: local queued gateway, upstream driver/planners/descriptors/GUI and Unity random API; no live Photon/Unity/Windows qualification.

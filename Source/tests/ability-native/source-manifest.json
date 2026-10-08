@@ -1,0 +1,15 @@
+{
+  "production_sources": {
+    "src/RollBroker.cs": "c47bf4911ca27a3fb331d1b5f729761bddac350aae45ebec4480186363695f22",
+    "src/RuntimeRolls.cs": "2c9ee8be2a6c0943621bf9b735a8e362a1927a00689d7a39036a7295010769d6",
+    "src/RollText.cs": "c5f66aa26724b88ecf2ff546b216c7d3f9db22045def18ec776c0dcffc625e70",
+    "src/NativeScratchScope.cs": "d3324e9ad7bfec787728cb352039b306fefd3c8b77e7aba92ecda4697d5aaf9b",
+    "src/NativeAbilityPlanner.cs": "e291d524dd95b36e33b4f1ca9f1a0beae28d1d9b231c031df10b020207b860bf",
+    "src/NativeSavePlanner.cs": "6dcc6eeb37bb9a48b1ba464467d3e0341a657eeaefdc6bddf199d5b49d274b30",
+    "tests/common/OfflineNetworkHost.cs": "7acacd203a7cb503a9053a0b2ede67c4fe39a0ef8237b3c9bf463e9fc752041b",
+    "tests/common/OfflineBardicHost.cs": "facdf9cd747a997dfc6c670bb1c6e4b403baa5a46d41a996226f882121b503c7",
+    "tests/common/OfflineShoveHost.cs": "e47bc52f1ed9491d4851a9fddfd1b4fa3446dfaf6a1397ca561c0c8a56b44e50"
+  },
+  "pristine_game_sha256": "a87e45cbd187e42e9d64a610850b39edba4896168b14d71ca71c5d32cf9e96ee",
+  "boundary": "net8 Linux real Harmony; stock native wrappers/providers/dice; terminal VerifyAbilityCheck, armor/inventory/conditions storage and UI explicit doubles; Save producer stub with exact guard helpers"
+}

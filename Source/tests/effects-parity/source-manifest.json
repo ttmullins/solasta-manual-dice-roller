@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "compiled_from_source_snapshot": true,
+  "sources": {
+    "tests/effects-parity/EffectParity.cs": "f79bcd85db15233909fae1fbed03738f8ddc0c29e926787866cf618a8741a0a2",
+    "src/EffectPatches.cs": "bba6ab8876b1b9a7ee115a340ac0042dd312b4044e781b62ea8d35d91e5ed7fb",
+    "src/RollText.cs": "c5f66aa26724b88ecf2ff546b216c7d3f9db22045def18ec776c0dcffc625e70",
+    "src/NativeScratchScope.cs": "d3324e9ad7bfec787728cb352039b306fefd3c8b77e7aba92ecda4697d5aaf9b",
+    "tools/HarmonyFixtureHost.cs": "eedfc7b2ab248d1d63c0ac75c6b1f01f9a6ffcf8f89cddcb390e7debb05cd23a",
+    "tests/effects-parity/run.py": "a00e334b1cda07d52e50a647c49f1a80159c804ac4c5f76ff3989fa6e3ff782d",
+    "tools/TestEnvironment.py": "13496af6599e2b155b4b672557b524a8ee78efb5ea8da7219fef69a489e5ac8b"
+  },
+  "native_game_sha256": "a87e45cbd187e42e9d64a610850b39edba4896168b14d71ca71c5d32cf9e96ee",
+  "test_harmony_sha256": "9514a5c06980b2d2b84e6b6429453eb31b7d904832f14d645e69754e0aaf902e",
+  "coverage": "Native descriptor argument parity and helper lifetime; NativeRollPlan/RuntimeRolls are capture-only adapters, not production ownership tests.",
+  "sources_after": {
+    "tests/effects-parity/EffectParity.cs": "f79bcd85db15233909fae1fbed03738f8ddc0c29e926787866cf618a8741a0a2",
+    "src/EffectPatches.cs": "bba6ab8876b1b9a7ee115a340ac0042dd312b4044e781b62ea8d35d91e5ed7fb",
+    "src/RollText.cs": "c5f66aa26724b88ecf2ff546b216c7d3f9db22045def18ec776c0dcffc625e70",
+    "src/NativeScratchScope.cs": "d3324e9ad7bfec787728cb352039b306fefd3c8b77e7aba92ecda4697d5aaf9b",
+    "tools/HarmonyFixtureHost.cs": "eedfc7b2ab248d1d63c0ac75c6b1f01f9a6ffcf8f89cddcb390e7debb05cd23a",
+    "tests/effects-parity/run.py": "a00e334b1cda07d52e50a647c49f1a80159c804ac4c5f76ff3989fa6e3ff782d",
+    "tools/TestEnvironment.py": "13496af6599e2b155b4b672557b524a8ee78efb5ea8da7219fef69a489e5ac8b"
+  },
+  "inputs_after": {
+    "native_game_sha256": "a87e45cbd187e42e9d64a610850b39edba4896168b14d71ca71c5d32cf9e96ee",
+    "test_harmony_sha256": "9514a5c06980b2d2b84e6b6429453eb31b7d904832f14d645e69754e0aaf902e"
+  },
+  "results_sha256": "729e5734d65779cadceb108bcfc6dd4d80881126bcbb98e5ba4024bbbe705f44",
+  "sources_after_compile": {
+    "tests/effects-parity/EffectParity.cs": "f79bcd85db15233909fae1fbed03738f8ddc0c29e926787866cf618a8741a0a2",
+    "src/EffectPatches.cs": "bba6ab8876b1b9a7ee115a340ac0042dd312b4044e781b62ea8d35d91e5ed7fb",
+    "src/RollText.cs": "c5f66aa26724b88ecf2ff546b216c7d3f9db22045def18ec776c0dcffc625e70",
+    "src/NativeScratchScope.cs": "d3324e9ad7bfec787728cb352039b306fefd3c8b77e7aba92ecda4697d5aaf9b",
+    "tools/HarmonyFixtureHost.cs": "eedfc7b2ab248d1d63c0ac75c6b1f01f9a6ffcf8f89cddcb390e7debb05cd23a",
+    "tests/effects-parity/run.py": "a00e334b1cda07d52e50a647c49f1a80159c804ac4c5f76ff3989fa6e3ff782d",
+    "tools/TestEnvironment.py": "13496af6599e2b155b4b672557b524a8ee78efb5ea8da7219fef69a489e5ac8b"
+  }
+}

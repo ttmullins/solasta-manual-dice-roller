@@ -1,0 +1,5 @@
+Fixture host: actual MonoMod platform with module filenames read from /proc/self/maps because Process.Modules is empty.
+Unhandled exception. System.Exception: Foreign condition-enumeration helper never executes during save preview
+   at SaveTests.Check(Boolean ok, String message)
+   at SaveTests.ForeignHelpersAndEffect()
+   at SaveTests.Main()

@@ -1,0 +1,2 @@
+BLOCKED complete scheduler Install by unavailable native Unity InternalCall: ECall methods must be packaged into a system module.
+PASS native network scheduler: 36 assertions; production scheduler patches genuine unmodified TA.Coroutine.Run with real Harmony.

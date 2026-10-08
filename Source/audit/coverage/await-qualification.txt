@@ -1,0 +1,22 @@
+tests/await/TestJump.cs(17,18): warning CS0169: The field 'CharacterActionMoveStepJump.jumpPosition' is never used
+tests/await/TestJump.cs(17,31): warning CS0169: The field 'CharacterActionMoveStepJump.landingPosition' is never used
+tests/await/CounterNativeTypes.cs(72,17): warning CS0169: The field 'CharacterActionCastSpell.addSpellLevel' is never used
+Fixture host: actual MonoMod platform with module filenames read from /proc/self/maps because Process.Modules is empty.
+PASS 111 actual extracted native Jump iterator / real Harmony generated await checks
+PASS rejected bad-hash: Unsupported native method version: CharacterActionMoveStepJump+<RollChecksIfNecessary>d__11
+PASS rejected unsafe-finally: Await would execute a synchronous finally: EH:Roll
+PASS rejected unsafe-branch: Unsupported branch iterator state assignment: Branch:Roll
+tests/await/RuntimeStub.cs(7,52): warning CS0649: Field 'RuntimeRolls.RejectArgumentMutation' is never assigned to, and will always have its default value false
+tests/await/RuntimeStub.cs(7,52): warning CS0649: Field 'RuntimeRolls.RejectArgumentMutation' is never assigned to, and will always have its default value false
+Unhandled exception. System.Exception: Unverified native argument evaluation at CharacterActionShove/<ExecuteImpl>d__4:ResolveRolls:00a7 IL_0092 or 
+   at FullGeneration.Main(String[] args)
+Traceback (most recent call last):
+  File "/workspace/scratch/794461367727/work/standalone-complete/tests/await/run.py", line 137, in <module>
+    main()
+  File "/workspace/scratch/794461367727/work/standalone-complete/tests/await/run.py", line 82, in main
+    build.run([args.dotnet, original / "FullGeneration.dll", args.managed.resolve(), "original"], output / "whole-original.txt")
+  File "/workspace/scratch/794461367727/work/standalone-complete/tools/Build.py", line 34, in run
+    result.check_returncode()
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 502, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '['/workspace/scratch/794461367727/work/tooling/dotnet/dotnet', '/workspace/scratch/794461367727/work/standalone-complete/tests/await/build/whole-original/FullGeneration.dll', '/workspace/scratch/794461367727/work/managed-input', 'original']' died with <Signals.SIGABRT: 6>.

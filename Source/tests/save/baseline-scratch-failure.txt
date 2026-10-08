@@ -1,0 +1,5 @@
+Fixture host: actual MonoMod platform with module filenames read from /proc/self/maps because Process.Modules is empty.
+Unhandled exception. System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+   at System.Collections.Generic.List`1.Enumerator.MoveNext()
+   at SaveTests.ScratchIdentity()
+   at SaveTests.Main()

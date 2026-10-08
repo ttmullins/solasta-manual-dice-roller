@@ -1,0 +1,16 @@
+{
+  "production_sources": {
+    "src/MultiplayerProtocol.cs": "ae722e15ff13c6fba4e0bd0e855fc2dc5baefaa74b590f60c0befa77eeb24a4d",
+    "src/MultiplayerTransport.cs": "52ad83821c1423e3957bc2f0c1b050c65526f1c280d89cadf04fca78dbe59d4d",
+    "src/MultiplayerRolls.cs": "aae3c54c8174c5c86ecb6fd0d5bda822217ab26a8c762b72456ba49cabca66f1"
+  },
+  "pristine_game_sha256": "a87e45cbd187e42e9d64a610850b39edba4896168b14d71ca71c5d32cf9e96ee",
+  "photon_assembly_hashes": {
+    "Photon3Unity3D.dll": "5619e0aec897562522ce9adc87b5b80e3e5e9b1b137cbae866f8812e874e7fbe",
+    "PhotonRealtime.dll": "1cb825bb0f955fef65a29b2981797214d08fa2137b3738c4924b709b7d28a29d",
+    "PhotonUnityNetworking.dll": "f1efa0cebf758bd79d43e202757d39b00e27384c65084ed14a9697af8bc3e32b",
+    "UnityEngine.CoreModule.dll": "9cbd669f76900a90025b7ace9a90025360eda03ed0877f630bd2ad91713f9969"
+  },
+  "abi_probe": "All genuine Solasta/Unity/Photon/UMM/Harmony references",
+  "executed_fixture": "Actual Photon EventData and IOnEventCallback; injected queued room gateway; game, UI, Plugin are host doubles; no live Photon server"
+}

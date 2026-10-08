@@ -1,0 +1,12 @@
+Fixture host: actual MonoMod platform with module filenames read from /proc/self/maps because Process.Modules is empty.
+LOG Rest preparation used the native roll: Exception of type 'RestNativeTests+StartupBoundary' was thrown.
+LOG Rest preparation used the native roll: Exception of type 'RestNativeTests+StartupBoundary' was thrown.
+Unhandled exception. System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Exception: Startup failure retries only a command which never began: True
+   at RestNativeTests.Check(Boolean p, String m)
+   at RestNativeTests.RunTest()
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at RestNativeBootstrap.Main()

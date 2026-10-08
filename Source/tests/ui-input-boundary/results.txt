@@ -1,0 +1,22 @@
+PASS Fixture binding preflight and install
+PASS Normal pointer cancellation dispatches both releases
+PASS Pointer-up callback throw does not prevent end-drag cleanup
+PASS End-drag callback throw still revokes gesture
+PASS Both handlers and logger can fail safely
+PASS Pointer-up callback reenters cancellation without recursion
+PASS End-drag callback reenters and mutates every pointer field
+PASS Reentrancy owner is retired after callback fault
+PASS Null pointer and null pointer dictionary are tolerated
+PASS Pointer dictionary mutation cannot break snapshot cancellation
+PASS ClearSelection throw cannot allow native Process
+PASS ClearSelection callback reenters Process without recursive selection clearing
+PASS A different input module remains independently cancellable
+PASS Unblocked Process leaves gesture and selection untouched
+PASS Null raycast cache is recreated and supplied
+PASS Existing raycast cache is cleared without replacing identity
+PASS Lifecycle reset fault still releases input capture
+PASS A location change re-arms paused multiplayer dice
+PASS World drag and selection gestures are revoked
+PASS Null command queue is suppressed safely
+PASS 20 actual InputGuards boundary cases; 39 assertions; 0 failures.
+Test-only callback and metadata boundaries validate production guard control flow; no native Unity EventSystem or physical input execution is claimed.

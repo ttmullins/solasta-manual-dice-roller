@@ -1,0 +1,29 @@
+PASS Successful actual Plugin.Load emits parsed diagnostics
+PASS Partial Native installation rollback
+PASS Partial Runtime installation rollback
+PASS Partial Effects installation rollback
+PASS Partial Rest installation rollback
+PASS Partial Input installation rollback
+PASS Partial Network installation rollback
+PASS Partial Features installation rollback
+PASS Transport initialization failure independently rolls back
+PASS Transport shutdown failure cannot strand installed patches
+PASS Multiplayer lifecycle keeps the negotiated build enabled
+PASS Post-install creation failure clears callbacks and patches
+PASS Reset and UI failures cannot stop patch rollback
+PASS Unpatch failure clears flags and callbacks and requires restart
+PASS Rollback preserves foreign patches and prior callbacks
+PASS Preflight and settings failures remain disabled
+PASS Loader settings exception cleans up safely
+PASS Null loader settings use safe defaults
+PASS An empty or outdated Settings.xml is replaced by defaults
+PASS Disable remains exception-safe and retains continuation patches
+PASS Unload refusal survives cleanup and logger exceptions
+PASS Logging exceptions never turn successful load into rollback
+PASS Runtime diagnostic boundary failure does not fail loaded plugin
+PASS Unloaded plugin cannot be enabled through stale toggle
+PASS Settings names and defaults are unchanged; UI-only fields are additive
+PASS Presets set exactly their roll types
+PASS UI-only settings stay out of the multiplayer profile fingerprint
+PASS 27 actual Plugin lifecycle cases; 193 assertions; 0 failures.
+The test uses genuine game metadata with mocked Harmony owner bookkeeping, UMM, UI and installers. It is not actual detour or Windows/Unity Mono loading proof.

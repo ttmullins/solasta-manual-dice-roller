@@ -1,0 +1,2 @@
+PASS 137 actual-native shove assertions; 18 pristine original wrapper/contest comparisons.
+PASS actual pristine game/Unity metadata: Shove, contest, equipment, advantage, hero and action-performance guards; no Unity native calls executed.

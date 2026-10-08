@@ -1,0 +1,18 @@
+Live 0.8.0.0 two-player session (host log, 2026-10-07 21:17:38 UTC):
+  roll_started sequence 49 CharacterActionAttack/<ExecuteImpl>d__7:RollAttackMode:034b owner 1 supported false
+  halted "Native roll descriptors disagree between players." -> room_left -> InvalidOperationException in CollectNetwork
+  (Solasta then showed "Mod Warning! ... instability" and both players left the session.)
+
+Cause reproduced with the 0.8.0.0 NativeNetworkDescriptor.cs and the new network-descriptor case:
+  CharacterActionAttack rolls with the attack modifier the acting player's game sent whenever
+  GameLocationBattleManager.CanAttack cannot confirm the attack locally. TrendInfo's network
+  serializer keeps value, source type, additive flag, source name, details and a RulesetCharacter
+  source only; the feature/condition source, die flag and die type are lost. The old descriptor
+  compared every TrendInfo field and every RulesetAttackMode field, so the same native roll had two
+  different descriptors on the two computers.
+
+Old descriptor result:
+Unhandled exception. System.Exception: an attack rolled with the network copy of the modifier agrees with the locally computed one
+   at DescriptorTests.Check(Boolean valid, String message)
+   at DescriptorTests.NetworkCopies()
+   at DescriptorTests.Main()

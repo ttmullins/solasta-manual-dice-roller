@@ -1,0 +1,2 @@
+PASS 59 production native network descriptor checks over genuine pristine game actor/attribute/condition getters.
+Scope: original cached native records on CoreCLR; no gameplay execution, Unity renderer, native RNG, or live Photon qualification.

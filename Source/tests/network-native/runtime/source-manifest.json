@@ -1,0 +1,14 @@
+{
+  "production_sources": {
+    "src/RollBroker.cs": "c47bf4911ca27a3fb331d1b5f729761bddac350aae45ebec4480186363695f22",
+    "src/RuntimeRolls.cs": "2c9ee8be2a6c0943621bf9b735a8e362a1927a00689d7a39036a7295010769d6",
+    "src/RollText.cs": "c5f66aa26724b88ecf2ff546b216c7d3f9db22045def18ec776c0dcffc625e70",
+    "src/NativeScratchScope.cs": "d3324e9ad7bfec787728cb352039b306fefd3c8b77e7aba92ecda4697d5aaf9b",
+    "src/NativeNetworkScheduler.cs": "eab2da6a1c081730afe5da6e16278b61f728510d3d54c12809fdd105a9c60ade"
+  },
+  "pristine_game_sha256": "a87e45cbd187e42e9d64a610850b39edba4896168b14d71ca71c5d32cf9e96ee",
+  "runtime": ".NET8/Linux; real Harmony; native copied dice/RNG state/TA.Run IL",
+  "transport_and_descriptor_are_boundary_doubles": true,
+  "scheduler_preflight_uses_genuine_separate_native_fixture": true,
+  "photon_sessions_executed": false
+}

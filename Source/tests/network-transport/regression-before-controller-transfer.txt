@@ -1,0 +1,11 @@
+System.Exception: a stale controller cannot submit manual or Auto input after native ownership changes
+   at TransportTests.Check(Boolean condition, String name)
+   at TransportTests.OwnershipChanges()
+   at TransportTests.Main()
+Traceback (most recent call last):
+  File "/workspace/scratch/0abb42827cbf/project/ManualDiceRoller/Source/tests/network-transport/run.py", line 33, in <module>
+    (here/'results.txt').write_text(result.stdout+result.stderr); print(result.stdout+result.stderr,end=''); result.check_returncode()
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 502, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '['/workspace/scratch/0abb42827cbf/tooling/dotnet/dotnet', '/workspace/scratch/0abb42827cbf/project/ManualDiceRoller/Source/tests/network-transport/build/TransportTests.dll']' returned non-zero exit status 1.

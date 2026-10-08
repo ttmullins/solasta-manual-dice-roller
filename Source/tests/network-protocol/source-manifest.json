@@ -1,0 +1,4 @@
+{
+  "src/MultiplayerProtocol.cs": "ae722e15ff13c6fba4e0bd0e855fc2dc5baefaa74b590f60c0befa77eeb24a4d",
+  "tests/network-protocol/ProtocolTests.cs": "31164ca51684a29504bc03dcd1adbc9f00f941ad5cbbfef1088c07040dc15538"
+}

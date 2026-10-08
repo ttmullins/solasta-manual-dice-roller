@@ -1,0 +1,6 @@
+{
+  "src/RollWindow.cs": "dd80021e291bbe102225318d64497a0db73d3bb280184a3a9aded5443026c921",
+  "tests/ui-render/UnityStubs.cs": "11a4a8e0d56bf74d61114362f1ad5b763992fe59d1e3bd49c2b887a068444aab",
+  "tests/ui-render/BoundaryStubs.cs": "bfe830a8384ac53408f7d7fc1eaefe2f4e0ff32623f44935310792d839680294",
+  "tests/ui-render/UiRenderTests.cs": "c0f9b7942d4bd9c0665a86c29214f0edee87e9b3bf2440ecf0265ff2e39c3647"
+}

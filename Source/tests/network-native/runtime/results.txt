@@ -1,0 +1,1 @@
+PASS production MP runtime/native RNG: 240 assertions; actual RuntimeRolls/broker/scheduler plus pristine native dice/RNG IL; transport and descriptors are explicit boundary doubles.

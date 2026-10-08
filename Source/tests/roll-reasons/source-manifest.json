@@ -1,0 +1,12 @@
+{
+  "fixture_sources": {
+    "tests/roll-reasons/ReasonsHost.cs": "c8955f4783386eca939b55c217530a2ef2f25f7f446c85165328426b21e45da0",
+    "tests/roll-reasons/ReasonsTests.cs": "e6b250ebfb359dd9a63d1558bf695381e92ce25a312a09cf51fd9340c0b70790"
+  },
+  "pristine_game_sha256": "a87e45cbd187e42e9d64a610850b39edba4896168b14d71ca71c5d32cf9e96ee",
+  "production_sources": {
+    "src/RollReasons.cs": "98017a877debe369daa3c32deb7ab345f094f1015fb842d9b6d1e517961cc8a2",
+    "src/RollText.cs": "c5f66aa26724b88ecf2ff546b216c7d3f9db22045def18ec776c0dcffc625e70"
+  },
+  "scope": "Actual pristine attack mode, effect form, condition and definition records on CoreCLR; plan and invocation records are doubles; display text only."
+}

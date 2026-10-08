@@ -1,0 +1,10 @@
+{
+  "production_plugin_sha256": "db4180e2ee27cc358af825b3f069652ba24b6d3e120ca0bf64d3172c4f16599c",
+  "captured_plugin_class_sha256": "2dd656cac706d0e7222cec30d0d2ade560771851bbb41000261dfe45d4d2ca2a",
+  "src/MultiplayerRolls.cs": "aae3c54c8174c5c86ecb6fd0d5bda822217ab26a8c762b72456ba49cabca66f1",
+  "boundaries": {
+    "BoundaryStubs.cs": "c1828db4f21873f3643a834c354b7809d8b9bc709a91750d23dd45ba04b4c402",
+    "PluginTests.cs": "4012a92ccde28902c59f4c407ff270a7b44880f5d3d0f40286887dd2d50dfee2",
+    "HarmonyBoundary.cs": "300533ebe6fbb212a6124ad30b6a2be969ced67a8e08c1734b7bf1776bf54781"
+  }
+}

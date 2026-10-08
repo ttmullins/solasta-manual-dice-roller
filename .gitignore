@@ -1,0 +1,22 @@
+build/
+**/build/
+Source/references/
+__pycache__/
+.claude/
+
+# Release outputs are published as GitHub Releases, not committed.
+*.zip
+/ManualDiceRoller.dll
+/Info.json
+/Audit/
+/CHECKSUMS.sha256
+/build-manifest.json
+/release-qualification.json
+
+# Never commit game or third-party binaries, or game logs.
+*.dll
+*.pdb
+*.exe
+Managed/
+Player.log
+Player-prev.log

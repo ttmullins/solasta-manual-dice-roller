@@ -1,0 +1,64 @@
+PASS production preflight and patch installation against the pristine game assembly
+PASS Gadget check resolver matches the original functor's own dice call
+PASS Gadget check resolver refuses the paths the original rolls no dice for
+PASS Gadget saving throw resolver matches the original functor's own save call
+PASS Dialog check resolver reproduces the dialog state's own check arguments
+PASS Dialog resolver ignores non-check states and automatic successes
+PASS Resolver failures are contained and logged
+PASS Probe captures the first actor die call without running it
+PASS Probe records bonus dice at their minimum without random draws
+PASS Probe can capture a specific method's receiver and arguments
+PASS Probe stops before a travel journal entry
+PASS Probe reports non-capture outcomes and failures
+PASS Concentration planner prompts the probed d20 with its bonus dice
+PASS A deferred roll prompts, then replays the original once
+PASS Unplanned and failed deferrals replay with game dice
+PASS Entries are planned and answered strictly in order
+PASS Disable, flush and drop
+PASS Deferral is refused where it could not finish safely
+PASS Deferred prompts carry their site heading
+PASS Monster identification probes the lore manager's own Survival check
+PASS Monster identification defers only when a manual roll can follow
+PASS Multiplayer deferred rolls run inside their own native coroutine
+PASS Repeat save resolver matches the condition's own saving throw
+PASS Repeat saves wait only at the end of a turn
+PASS Surprise resolver matches the battle's own Stealth roll
+PASS Turn-end stealth resolver matches the hidden character's own Stealth roll
+PASS Turn-end stealth waits for the roll inside its own coroutine
+PASS Falling damage asks for the game's own number of d6
+PASS Travel ambush planner and raw-die hook
+PASS Synchronous pumps are detected
+PASS Prompt text helpers
+PASS 0.7 turn, effect and feature roll preflight and patch installation against the pristine game assembly
+PASS The battle's turn start calls are rewritten exactly once
+PASS A turn start with a save waits whole and replays NextTurn's pinned tail
+PASS Lingering spell parts match the effect's own save and forms
+PASS A condition's recurring forms match ExecuteRecurrentForms
+PASS Saves when damage ends a condition match the original loop
+PASS Lingering effects and damage saves wait only where it is safe
+PASS A condition's recurring damage at the end of a turn waits in the queue's order
+PASS Deflect Missiles plans its reduction die with the bonus the action adds
+PASS Spell failure waits before the original check and then fails on the entered die
+PASS Spell slot preservation finds the original's feature and threshold
+PASS In battle the detectors' Perception and the hidden character's Stealth are planned in the original order
+PASS An action that can give a hidden character away waits for the same checks
+PASS Hidden-object Perception plans only the active roll the functor makes
+PASS The Perception loop waits only for the opt-in setting
+PASS Answer choices with a check roll the party's best Insight against DC 15
+PASS Travel crafting plans each awake crafter's check like the activity's own
+PASS Composite parts are planned in order and bound to their anchors
+PASS The game's own condition and effect processing names the anchor
+PASS Character creation asks for six 4d6 rolls and the game keeps the best three of each
+PASS Rolled level-up hit points replace the game's average only when chosen
+PASS 0.8 trap, recharge and turn roll preflight and patch installation against the pristine game assembly
+PASS A used power that recharges on a d6 joins the turn start, bound to its character
+PASS A random behaviour feature joins the turn start with its weighted table
+PASS The creatures' ambush die is a game master die after the party's
+PASS Food found is asked only after a successful search
+PASS A trap's saves and damage are planned per affected character like the original trigger
+PASS A trap's private trigger is captured, waits for the dice and then runs once in its own step
+PASS A hazard's lingering parts match RulesetEffectEnvironment.ApplyEffectOnCharacter
+PASS The stealth breaker functor waits for each acting character's check
+PASS A charged item's last charge asks for the d20 that can destroy it
+PASS 59 single-player site cases; 972 assertions; 0 failures.
+Uses the pristine game assembly under .NET 8; Unity rendering, the roll broker/window and actual Windows Mono are not exercised.

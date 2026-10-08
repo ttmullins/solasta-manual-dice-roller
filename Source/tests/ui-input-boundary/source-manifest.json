@@ -1,0 +1,8 @@
+{
+  "production_plugin_sha256": "db4180e2ee27cc358af825b3f069652ba24b6d3e120ca0bf64d3172c4f16599c",
+  "captured_input_guards_sha256": "61bd5ab9d563c94f3fce26b5687f5981ec894b0ae4969ec745455fab4ec36541",
+  "boundaries": {
+    "BoundaryStubs.cs": "b3ddc9db4b868821cc3aa898db18697e674b07806d2b0d95f18077cdb1a4b07b",
+    "InputBoundaryTests.cs": "c316469492520fa04b06c400416a1d85c24154270ce6c0fdef35d6f1671af951"
+  }
+}

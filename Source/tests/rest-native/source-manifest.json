@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "compiled_from_source_snapshot": true,
+  "sources": {
+    "tests/rest-native/Environment.cs": "f8680fe4527e54076979bf242d1453bcd460f5981968b81ef44c155ab48ddb58",
+    "tests/rest-native/RestNativeTests.cs": "fc7e45fa2a6391a345d01d0c873bcb0d5fa95cbd6168e7c0b6c872828d5b287c",
+    "tests/rest-native/Bootstrap.cs": "9faa9b169fe93252dba204545781d4a823f45ace5c2d3824c37da997687d1b62",
+    "src/RestPatches.cs": "92b22de44396daf0c88f8127e69fc585d19df5f7864d1b8209755a4f3f0ddb58",
+    "src/RuntimeRolls.cs": "2c9ee8be2a6c0943621bf9b735a8e362a1927a00689d7a39036a7295010769d6",
+    "src/RollText.cs": "c5f66aa26724b88ecf2ff546b216c7d3f9db22045def18ec776c0dcffc625e70",
+    "src/RollBroker.cs": "c47bf4911ca27a3fb331d1b5f729761bddac350aae45ebec4480186363695f22",
+    "src/NativeScratchScope.cs": "d3324e9ad7bfec787728cb352039b306fefd3c8b77e7aba92ecda4697d5aaf9b",
+    "tools/HarmonyFixtureHost.cs": "eedfc7b2ab248d1d63c0ac75c6b1f01f9a6ffcf8f89cddcb390e7debb05cd23a",
+    "tests/common/OfflineNetworkHost.cs": "7acacd203a7cb503a9053a0b2ede67c4fe39a0ef8237b3c9bf463e9fc752041b",
+    "tests/common/OfflineBardicHost.cs": "facdf9cd747a997dfc6c670bb1c6e4b403baa5a46d41a996226f882121b503c7",
+    "tests/common/OfflineShoveHost.cs": "e47bc52f1ed9491d4851a9fddfd1b4fa3446dfaf6a1397ca561c0c8a56b44e50",
+    "tests/rest-native/run.py": "42c85bc66237c50ae43a161563e15c8d1668355be5ada2b555d9982786a4f72d",
+    "tools/TestEnvironment.py": "13496af6599e2b155b4b672557b524a8ee78efb5ea8da7219fef69a489e5ac8b"
+  },
+  "native_game_sha256": "a87e45cbd187e42e9d64a610850b39edba4896168b14d71ca71c5d32cf9e96ee",
+  "test_harmony_sha256": "9514a5c06980b2d2b84e6b6429453eb31b7d904832f14d645e69754e0aaf902e",
+  "sources_after": {
+    "tests/rest-native/Environment.cs": "f8680fe4527e54076979bf242d1453bcd460f5981968b81ef44c155ab48ddb58",
+    "tests/rest-native/RestNativeTests.cs": "fc7e45fa2a6391a345d01d0c873bcb0d5fa95cbd6168e7c0b6c872828d5b287c",
+    "tests/rest-native/Bootstrap.cs": "9faa9b169fe93252dba204545781d4a823f45ace5c2d3824c37da997687d1b62",
+    "src/RestPatches.cs": "92b22de44396daf0c88f8127e69fc585d19df5f7864d1b8209755a4f3f0ddb58",
+    "src/RuntimeRolls.cs": "2c9ee8be2a6c0943621bf9b735a8e362a1927a00689d7a39036a7295010769d6",
+    "src/RollText.cs": "c5f66aa26724b88ecf2ff546b216c7d3f9db22045def18ec776c0dcffc625e70",
+    "src/RollBroker.cs": "c47bf4911ca27a3fb331d1b5f729761bddac350aae45ebec4480186363695f22",
+    "src/NativeScratchScope.cs": "d3324e9ad7bfec787728cb352039b306fefd3c8b77e7aba92ecda4697d5aaf9b",
+    "tools/HarmonyFixtureHost.cs": "eedfc7b2ab248d1d63c0ac75c6b1f01f9a6ffcf8f89cddcb390e7debb05cd23a",
+    "tests/common/OfflineNetworkHost.cs": "7acacd203a7cb503a9053a0b2ede67c4fe39a0ef8237b3c9bf463e9fc752041b",
+    "tests/common/OfflineBardicHost.cs": "facdf9cd747a997dfc6c670bb1c6e4b403baa5a46d41a996226f882121b503c7",
+    "tests/common/OfflineShoveHost.cs": "e47bc52f1ed9491d4851a9fddfd1b4fa3446dfaf6a1397ca561c0c8a56b44e50",
+    "tests/rest-native/run.py": "42c85bc66237c50ae43a161563e15c8d1668355be5ada2b555d9982786a4f72d",
+    "tools/TestEnvironment.py": "13496af6599e2b155b4b672557b524a8ee78efb5ea8da7219fef69a489e5ac8b"
+  },
+  "inputs_after": {
+    "native_game_sha256": "a87e45cbd187e42e9d64a610850b39edba4896168b14d71ca71c5d32cf9e96ee",
+    "test_harmony_sha256": "9514a5c06980b2d2b84e6b6429453eb31b7d904832f14d645e69754e0aaf902e"
+  },
+  "results_sha256": "628c1edf7fa730e9a57cadda3c29dc4e8ffa71e30da711323e9db63bb01377da",
+  "sources_after_compile": {
+    "tests/rest-native/Environment.cs": "f8680fe4527e54076979bf242d1453bcd460f5981968b81ef44c155ab48ddb58",
+    "tests/rest-native/RestNativeTests.cs": "fc7e45fa2a6391a345d01d0c873bcb0d5fa95cbd6168e7c0b6c872828d5b287c",
+    "tests/rest-native/Bootstrap.cs": "9faa9b169fe93252dba204545781d4a823f45ace5c2d3824c37da997687d1b62",
+    "src/RestPatches.cs": "92b22de44396daf0c88f8127e69fc585d19df5f7864d1b8209755a4f3f0ddb58",
+    "src/RuntimeRolls.cs": "2c9ee8be2a6c0943621bf9b735a8e362a1927a00689d7a39036a7295010769d6",
+    "src/RollText.cs": "c5f66aa26724b88ecf2ff546b216c7d3f9db22045def18ec776c0dcffc625e70",
+    "src/RollBroker.cs": "c47bf4911ca27a3fb331d1b5f729761bddac350aae45ebec4480186363695f22",
+    "src/NativeScratchScope.cs": "d3324e9ad7bfec787728cb352039b306fefd3c8b77e7aba92ecda4697d5aaf9b",
+    "tools/HarmonyFixtureHost.cs": "eedfc7b2ab248d1d63c0ac75c6b1f01f9a6ffcf8f89cddcb390e7debb05cd23a",
+    "tests/common/OfflineNetworkHost.cs": "7acacd203a7cb503a9053a0b2ede67c4fe39a0ef8237b3c9bf463e9fc752041b",
+    "tests/common/OfflineBardicHost.cs": "facdf9cd747a997dfc6c670bb1c6e4b403baa5a46d41a996226f882121b503c7",
+    "tests/common/OfflineShoveHost.cs": "e47bc52f1ed9491d4851a9fddfd1b4fa3446dfaf6a1397ca561c0c8a56b44e50",
+    "tests/rest-native/run.py": "42c85bc66237c50ae43a161563e15c8d1668355be5ada2b555d9982786a4f72d",
+    "tools/TestEnvironment.py": "13496af6599e2b155b4b672557b524a8ee78efb5ea8da7219fef69a489e5ac8b"
+  }
+}

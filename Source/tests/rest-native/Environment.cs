@@ -1,0 +1,10 @@
+using System;using System.Collections;using System.Collections.Generic;
+namespace ManualDiceRoller {
+public sealed class ModSettings {public bool HitDice=true,SpellPools=true,EnemyRolls;}
+public static class Plugin {public static bool Enabled=true;public static ModSettings Settings=new ModSettings();public static bool Online,Allowed=true;public static bool UnsupportedRulesMod {get{return false;}}public static bool Networked(){return Online;}public static bool Allows(RuleDefinitions.RollContext c){return Allowed;}public static void Log(string s){Console.WriteLine("LOG "+s);}public static void Warn(string s){Console.WriteLine("WARN "+s);}}
+public sealed class RollPrompt {public readonly int[] Faces;public readonly string Title;public RollPrompt(string t,string a,string s,string n,int[] f){Faces=f;Title=t;}}
+public static class RollWindow {public static bool Visible;public static Action<int[]> Accept;public static Action Auto;public static readonly List<RollPrompt> Prompts=new List<RollPrompt>();static RollPrompt owned;public static void Display(RollPrompt p,Action<int[]> a,Action cancel){Visible=true;owned=p;Accept=a;Auto=cancel;Prompts.Add(p);}public static void Close(RollPrompt p){if(ReferenceEquals(p,owned)){Visible=false;owned=null;}}public static void Close(){Visible=false;owned=null;}}
+public static class EffectPatches {public static bool TryPrepare(NativeInvocation i,NativeRollPlan p){return false;}public static bool IsEligibleNativeDraw(RulesetActor a,RuleDefinitions.RollContext c,bool s){return true;}}
+public static class NativeAbilityPlanner {public static bool Previewing;public static bool AllowsStaticBonus;public static void Install(HarmonyLib.Harmony h){}public static bool TryPrepare(NativeInvocation i,NativeRollPlan p){return false;}}
+public static class NativeSavePlanner {public static bool Previewing;public static bool AllowsStaticBonus;public static void Install(HarmonyLib.Harmony h){}public static bool TryPrepare(NativeInvocation i,NativeRollPlan p){return false;}}
+}

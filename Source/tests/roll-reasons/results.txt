@@ -1,0 +1,1 @@
+PASS 13 roll explanation checks over genuine pristine game records (display text only).

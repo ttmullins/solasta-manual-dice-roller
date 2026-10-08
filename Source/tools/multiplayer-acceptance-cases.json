@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "profile": "multiplayer_windows_x64_unity_mono",
+  "protocol": 2,
+  "recorded_roll_cases": [
+    "mp_attack_faces",
+    "mp_advantage",
+    "mp_lucky",
+    "mp_save_bonus",
+    "mp_spell_damage",
+    "mp_sleep",
+    "mp_magic_missile",
+    "mp_rest",
+    "mp_shove"
+  ],
+  "cases": [
+    {
+      "id": "mp_handshake",
+      "requirement": "Start a fresh private room with at least two machines running the exact candidate and supported game. Record actor roster/master and a negotiated session-ready marker on every peer; no manual roll may start before every matching peer acknowledges the profile."
+    },
+    {
+      "id": "mp_ownership",
+      "requirement": "Give host and client different party characters. Trigger actions for both; only the verified controller receives the editable prompt, other peers wait, and no bystander can submit or reuse an earlier action. Transfer control while idle and verify the next action uses its new owner. In separate disposable rooms transfer during a prompt and after input but before native execution, including Auto: all peers must stop, stale callbacks cannot consume dice, owned UI closes and a fresh matching room resolves a new action."
+    },
+    {
+      "id": "mp_attack_faces",
+      "requirement": "Submit known normal attack faces for host-owned and client-owned characters. Record the same native outcomes, consumed native RNG draws and native callback counts on every peer; compare with a retained unmodified native baseline."
+    },
+    {
+      "id": "mp_advantage",
+      "requirement": "Exercise advantage and disadvantage with unequal faces, then critical and miss paths. Every peer must consume the same ordered vector and choose the same native result."
+    },
+    {
+      "id": "mp_lucky",
+      "requirement": "Enter a natural 1 for Halfling Lucky, then manually enter its replacement. Repeat with Auto on the replacement. All peers resolve exactly once without an unrequested extra roll or stale face."
+    },
+    {
+      "id": "mp_ability_counterspell",
+      "requirement": "Exercise Jump/Climb/BreakFree and Counterspell failure plus success. Verify controlled actor, bonuses, continuation and native callbacks agree on every peer."
+    },
+    {
+      "id": "mp_shove",
+      "requirement": "Exercise shove contests for host and client characters against party/enemy defenders with differing native defending skills and advantage. Record both ordered raw face groups, native outcome and next-action state on all peers; repeat a native fallback case without divergent RNG."
+    },
+    {
+      "id": "mp_save_bonus",
+      "requirement": "Exercise Bless/Bane saves and failed-save retries. Record base and bonus/replacement faces in native order; every peer obtains the same success, state and callback count."
+    },
+    {
+      "id": "mp_spell_damage",
+      "requirement": "Exercise shared-area and per-target damage, healing, temporary HP, critical extra dice and an unsupported mixed-effect native fallback. Compare HP and effect state on every peer."
+    },
+    {
+      "id": "mp_sleep",
+      "requirement": "Cast Sleep with a known 5d8 pool including total 40. Every peer must use the identical pool and native target ordering/consumption with no stalled action."
+    },
+    {
+      "id": "mp_magic_missile",
+      "requirement": "Cast Magic Missile at multiple targets with ordinary/additional damage. Compare each missile, correct dice count, target HP and native callbacks on every peer."
+    },
+    {
+      "id": "mp_rest",
+      "requirement": "Spend known hit dice for host and client characters, then Auto. Every peer agrees on healing/spent dice and no UI callback is duplicated."
+    },
+    {
+      "id": "mp_auto_rng",
+      "requirement": "Use Auto before any face and after partial entry/replacement. Compare native RNG progression on every peer against a native baseline and verify the next action consumes its own roll."
+    },
+    {
+      "id": "mp_queue_timing",
+      "requirement": "Exercise simultaneous actions, reactions, a slow owner, latency and a delayed response. Requests remain bound to their exact action/descriptor, and every peer resolves once or enters a coordinated recovery without stranded modal/input."
+    },
+    {
+      "id": "mp_duplicate_stale",
+      "requirement": "Use the controlled development gateway to duplicate, reorder and replay already completed or old-session packets, and send an invalid owner/vector. Replay an old complete Hello/Welcome/Start transcript before a fresh participant hears its current host: it must not become ready with the old transcript and must recover to the current nonce-bound protocol-2 session. Reject stale decisions without rolling, callback duplication, action theft or affecting the next valid session; retain actual runtime observations."
+    },
+    {
+      "id": "mp_mismatched_peer",
+      "requirement": "In separate disposable rooms test a missing mod, different DLL, game/profile/settings/capabilities mismatch and disabled peer. Manual mode must remain unavailable; record useful status and verify no peer continues with a unilateral automatic fallback. Follow coordinated leave/reload recovery, then establish a fresh matching room and verify a new manual action and its next automatic die agree."
+    },
+    {
+      "id": "mp_disconnect_rejoin",
+      "requirement": "Disconnect the owner while pending and another peer after acceptance. Record the implemented coordinated halt/cancel/recovery behavior, verify no stranded modal or native divergence, restart/rejoin a fresh matching session and complete a new manual roll."
+    },
+    {
+      "id": "mp_master_change",
+      "requirement": "Change the master during a pending action and after a completed one. Verify the documented guarded recovery, no old-master packets accepted, and a fresh matching session completes a new action without stale faces."
+    },
+    {
+      "id": "mp_transition_cleanup",
+      "requirement": "Change location, end combat, load a save and disable/re-enable the mod while a request is pending. Verify cancellation/recovery is coordinated and all peers retain usable input and native actions."
+    },
+    {
+      "id": "mp_native_rng_callbacks",
+      "requirement": "After each manual batch, compare subsequent native rolls and game state on all peers. Retain exact known-face action records, native RNG draw counts, callback counts and the unchanged-game baseline rather than inferring correctness from matching damage alone."
+    }
+  ]
+}

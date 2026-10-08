@@ -1,0 +1,2 @@
+PASS 94 UI state assertions using actual Unity/game reference types. Rendering and mouse drag need in-game playtesting.
+PASS 19 input/lifecycle assertions from shipped guard source and pristine native metadata. Test-only polling boundary avoids claiming engine gameplay.

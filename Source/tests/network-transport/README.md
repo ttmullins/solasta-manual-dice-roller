@@ -1,0 +1,13 @@
+# Multiplayer transport and facade regressions
+
+Run `python3 tests/network-transport/run.py` from the source project. The runner accepts the common `--managed`, `--references`, `--dotnet`, `--sdk-root`, and `--cecil` arguments.
+
+The ABI probe compiles the unchanged production protocol, transport, and multiplayer facade against all genuine supplied game/Unity/Photon assemblies and the pinned UMM/Harmony references. The executable fixture uses the real Photon `EventData` and callback interface, with an injected, queued room gateway. Game ownership, the plugin, and the UI are boundary doubles; this is not a live Photon session or Unity rendering test.
+
+The fixture covers four-peer handshake and shared outcomes; controlling-player and AI ownership and substituted characters; owner-only interactive prompts and nonowner waiting banners; asynchronous callbacks; exact sender filtering; defensive packet copies; packet and queue limits; settings, roster and host changes; the native action lease between requests; Photon send refusal; cancellation; slow human input; missing peers; idempotent teardown; and a failed room remaining stopped until actual native room teardown has been observed. It also reproduces a native reset discarding a nested facade iterator without disposing it: synchronous cleanup closes its owned UI and releases its request lock, and a late discarded-child `Dispose` cannot close or unlock a newly joined request. Production assembly fingerprints and source snapshots are recorded with the results.
+
+The production adapter registers one `IOnEventCallback` through `PhotonNetwork.AddCallbackTarget`, uses reliable uncached event 198 on channel 0 with explicit recipient actors, and never loops its own packets back. The pinned native game uses event 10; PUN internal events begin at 200. Wire magic distinguishes another mod's unrelated event-198 payload. The normal game update processes bounded copied packets and outcomes.
+
+Every participating player must use the exact mod build, pinned game libraries, and matching roll settings. Networked native calls rendezvous even while the handshake is pending or a particular manual roll is unsupported. A shared automatic decision is allowed before native execution; a local timeout, malformed packet, interruption, or changed active roster cannot release a unilateral native roll. Such a session stops and requests native room departure. Human dice entry does not have a short network timeout.
+
+Live production acceptance still requires retained game logs from every peer and real Windows/Mono/Unity/Photon gameplay. These fixtures cannot certify actual network latency, game-server reconnects, native UI rendering, or complete campaign gameplay.

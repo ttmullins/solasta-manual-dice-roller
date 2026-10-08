@@ -1,0 +1,1 @@
+PASS network native behavior: 143 assertions; copied pristine raw/Karmic/state/RollHitDieAsync IL; Unity random API is a managed boundary double.

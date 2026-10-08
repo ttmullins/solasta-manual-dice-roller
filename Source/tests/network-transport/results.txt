@@ -1,0 +1,1 @@
+Network transport/facade: 100 assertions passed; genuine Photon EventData/ABI, queued gateway fixture.

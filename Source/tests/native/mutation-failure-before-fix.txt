@@ -1,0 +1,12 @@
+Fixture host: actual MonoMod platform with module filenames read from /proc/self/maps because Process.Modules is empty.
+PASS: 60 composite native comparisons across original faces, advantage/disadvantage, proficiency, skill eligibility, clamps, Lucky, repeated rerolls and forced faces.
+PASS: nested actor and static-sum notifications keep independent native RNG.
+PASS: canceled requests, changed native features and skipped form identities.
+PASS: Auto on a later group or Lucky replacement discards the whole step and redraws every native stage.
+PASS: whole-batch count guards, automatic draw boundaries, accepted-array immutability and pending reset/disposal.
+PASS: owner cancellation and top-level waiter disposal retire orphan modals without closing another owner's prompt.
+Mutating native notification: actual=19 first=19 second=6 nativeRNG=1 events=1>2,2>19,1>6
+Unhandled exception. System.Exception: A native notification changed reroll control and stole the other advantage face's accepted replacement
+   at NativeAdapterTests.Check(Boolean condition, String message)
+   at NativeAdapterTests.MutatingRerollEvents()
+   at NativeAdapterTests.Main()

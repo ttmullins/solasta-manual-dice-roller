@@ -1,0 +1,16 @@
+{
+  "production_sources": {
+    "src/RollBroker.cs": "c47bf4911ca27a3fb331d1b5f729761bddac350aae45ebec4480186363695f22",
+    "src/RuntimeRolls.cs": "2c9ee8be2a6c0943621bf9b735a8e362a1927a00689d7a39036a7295010769d6",
+    "src/RollText.cs": "c5f66aa26724b88ecf2ff546b216c7d3f9db22045def18ec776c0dcffc625e70",
+    "src/NativeScratchScope.cs": "d3324e9ad7bfec787728cb352039b306fefd3c8b77e7aba92ecda4697d5aaf9b",
+    "src/NativePatches.cs": "b29239ad74dc388ba99e32e44c956d6d86719e717ffe1ea6e36253a330263da9",
+    "src/RollWindow.cs": "dd80021e291bbe102225318d64497a0db73d3bb280184a3a9aded5443026c921",
+    "tests/common/OfflineNetworkHost.cs": "7acacd203a7cb503a9053a0b2ede67c4fe39a0ef8237b3c9bf463e9fc752041b",
+    "tests/common/OfflineBardicHost.cs": "facdf9cd747a997dfc6c670bb1c6e4b403baa5a46d41a996226f882121b503c7",
+    "tests/common/OfflineShoveHost.cs": "e47bc52f1ed9491d4851a9fddfd1b4fa3446dfaf6a1397ca561c0c8a56b44e50"
+  },
+  "pristine_game_sha256": "a87e45cbd187e42e9d64a610850b39edba4896168b14d71ca71c5d32cf9e96ee",
+  "runtime": ".NET8/Linux real Harmony with fixture-only module enumeration shim",
+  "unity_and_ability_descriptor_are_boundaries": true
+}

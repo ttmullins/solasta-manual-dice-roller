@@ -1,0 +1,2 @@
+PASS complete production scheduler Install: 6 pristine game targets; Unity InternalCalls are not invoked.
+PASS native network scheduler: 36 assertions; production scheduler patches genuine unmodified TA.Coroutine.Run with real Harmony.

@@ -1,0 +1,12 @@
+{
+  "fixture_sources": {
+    "tests/network-descriptor/DescriptorHost.cs": "d4378062f599a425973007045198cf8ebe80e4752508f6f27928c0c60ca27f7f",
+    "tests/network-descriptor/DescriptorTests.cs": "3e8bd3031e3ccb80feea2cb1f02281990f91705e22bc429d47c42b70db08dea3"
+  },
+  "pristine_game_sha256": "a87e45cbd187e42e9d64a610850b39edba4896168b14d71ca71c5d32cf9e96ee",
+  "production_sources": {
+    "src/NativeNetworkDescriptor.cs": "b318b1bf717b1188678875979b1c90706a76c8ad78e251dbd4c0961b30ecc1d7",
+    "src/RollBroker.cs": "c47bf4911ca27a3fb331d1b5f729761bddac350aae45ebec4480186363695f22"
+  },
+  "scope": "Actual pristine cached actor/attribute/condition getters on CoreCLR; containing data records are doubles; no native gameplay, RNG or Unity renderer."
+}

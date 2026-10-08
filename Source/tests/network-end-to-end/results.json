@@ -1,0 +1,139 @@
+{
+  "status": "pass",
+  "assertions": 86545,
+  "scenarios": [
+    {
+      "members": 2,
+      "mode": "manual",
+      "frames": 703,
+      "native_steps": 18,
+      "last_tick": 69,
+      "all_peer_native_results_ticks_and_following_automatic_draws_match": true
+    },
+    {
+      "members": 4,
+      "mode": "manual",
+      "frames": 1115,
+      "native_steps": 18,
+      "last_tick": 69,
+      "all_peer_native_results_ticks_and_following_automatic_draws_match": true
+    },
+    {
+      "members": 2,
+      "mode": "auto",
+      "frames": 714,
+      "native_steps": 18,
+      "last_tick": 69,
+      "all_peer_native_results_ticks_and_following_automatic_draws_match": true
+    },
+    {
+      "members": 2,
+      "mode": "deferred",
+      "frames": 667,
+      "native_steps": 18,
+      "last_tick": 51,
+      "all_peer_native_results_ticks_and_following_automatic_draws_match": true
+    },
+    {
+      "members": 3,
+      "mode": "deferred",
+      "frames": 931,
+      "native_steps": 18,
+      "last_tick": 51,
+      "all_peer_native_results_ticks_and_following_automatic_draws_match": true
+    },
+    {
+      "members": 3,
+      "mode": "extended",
+      "frames": 732,
+      "native_steps": 18,
+      "last_tick": 69,
+      "all_peer_native_results_ticks_and_following_automatic_draws_match": true
+    },
+    {
+      "members": 2,
+      "mode": "different-plan",
+      "frames": 638,
+      "native_steps": 18,
+      "last_tick": 69,
+      "all_peer_native_results_ticks_and_following_automatic_draws_match": true
+    },
+    {
+      "members": 2,
+      "mode": "different-result",
+      "frames": 690,
+      "native_steps": 18,
+      "last_tick": 69,
+      "all_peer_native_results_ticks_and_following_automatic_draws_match": true
+    },
+    {
+      "members": 2,
+      "mode": "lockstep",
+      "frames": 700,
+      "native_steps": 18,
+      "last_tick": 69,
+      "all_peer_native_results_ticks_and_following_automatic_draws_match": true
+    },
+    {
+      "members": 3,
+      "mode": "lockstep",
+      "frames": 907,
+      "native_steps": 18,
+      "last_tick": 69,
+      "all_peer_native_results_ticks_and_following_automatic_draws_match": true
+    },
+    {
+      "members": 4,
+      "mode": "lockstep",
+      "frames": 1052,
+      "native_steps": 18,
+      "last_tick": 69,
+      "all_peer_native_results_ticks_and_following_automatic_draws_match": true
+    },
+    {
+      "members": 2,
+      "mode": "lockstep-late",
+      "frames": 703,
+      "native_steps": 18,
+      "last_tick": 69,
+      "all_peer_native_results_ticks_and_following_automatic_draws_match": true
+    },
+    {
+      "members": 3,
+      "mode": "lockstep-late",
+      "frames": 879,
+      "native_steps": 18,
+      "last_tick": 69,
+      "all_peer_native_results_ticks_and_following_automatic_draws_match": true
+    }
+  ],
+  "negative_scenarios": [
+    {
+      "mode": "different-profile",
+      "frames": 71,
+      "paused_at_step": 0,
+      "all_peers_paused_stayed_in_room_and_finished_with_game_dice": true
+    },
+    {
+      "mode": "different-owner",
+      "frames": 76,
+      "paused_at_step": 0,
+      "all_peers_paused_stayed_in_room_and_finished_with_game_dice": true
+    },
+    {
+      "mode": "transfer",
+      "frames": 77,
+      "paused_at_step": 0,
+      "all_peers_paused_stayed_in_room_and_finished_with_game_dice": true
+    }
+  ],
+  "negative_lockstep": [
+    {
+      "members": 2,
+      "mode": "no-lockstep",
+      "frames": 725,
+      "native_steps": 18,
+      "diverged_steps_without_lockstep": 18
+    }
+  ]
+}

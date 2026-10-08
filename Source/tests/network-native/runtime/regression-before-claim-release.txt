@@ -1,0 +1,4 @@
+Fixture host: actual MonoMod platform with module filenames read from /proc/self/maps because Process.Modules is empty.
+Unhandled exception. System.Exception: An abandoned admission retained the scheduler claim after clearing its runtime owner
+   at NetworkRuntimeTests.Check(Boolean condition, String text)
+   at NetworkRuntimeTests.Main()

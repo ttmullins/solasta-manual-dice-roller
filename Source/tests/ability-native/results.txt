@@ -1,0 +1,3 @@
+PASS: 12 actual location-wrapper comparisons (lighting, armor, expertise, added/subtracted bonuses).
+PASS: 117 actual-native ability assertions.
+PASS: actual pristine game/Unity metadata accepts location, Basic and hero ability guards without executing Unity native calls.
