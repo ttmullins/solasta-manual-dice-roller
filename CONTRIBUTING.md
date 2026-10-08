@@ -2,6 +2,8 @@
 
 Thanks for helping. Bug reports from real games are as valuable as code.
 
+This project is maintained on a best-effort basis: issues and pull requests are welcome, but answers may be slow or may not come (see "Please read first" in the README). If you want to take it further, fork it; the MIT license allows anything, including publishing your own version. The project itself was built entirely with an AI assistant, so AI-assisted contributions are fine too; please test them in a real game where you can.
+
 ## Reporting a problem
 
 Open an issue with:

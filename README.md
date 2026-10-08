@@ -4,9 +4,16 @@
 >
 > **Developers:** the mod's source is in `Source/src` and its tests are in `Source/tests`. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to build and test against your own copy of the game. MIT licensed; Solasta and its files belong to Tactical Adventures and are not included.
 
+## Please read first
+
+- **Made entirely with AI.** I did not write this code myself. Everything here was created with an AI assistant (Anthropic's Claude), working from my requests and from the problems we hit while playing: the mod, the tests, the tools and this documentation.
+- **Limited testing.** I have only tested it in a few co-op sessions with one other player. Many rolls, spells and situations have never been tried in a real game. Expect bugs, and keep backups of your saves.
+- **No promise of updates.** I don't know how much time I will put into this. Issues and pull requests are welcome, but I may answer slowly or not at all.
+- **Take it and make it yours.** The code is MIT licensed: fork it, change it, fix it, republish it or build something new from it. You don't need to ask.
+
 A standalone Unity Mod Manager mod for the supplied Steam Windows build of Solasta. Enter physical dice faces; the original game applies modifiers, features, outcomes, damage, healing and spell target selection. No replacement game DLL and no GoDice support.
 
-**Manual multiplayer is implemented in this build. Every participant must install the same build and select matching roll types before joining.** Native code, protocol simulations and transport fixtures have been tested; actual Windows/Unity sessions have not been run here, so please test with a disposable save first.
+**Manual multiplayer is implemented in this build. Every participant must install the same build and select matching roll types before joining.** Beyond its automated tests it has only been played in a few two-player sessions (see above), so please try it on a spare save first.
 
 ## What's new in 0.8.4.2
 
